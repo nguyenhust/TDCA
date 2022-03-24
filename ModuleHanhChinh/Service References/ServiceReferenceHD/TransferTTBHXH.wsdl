@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetThongTinBHXH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaThe" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hoten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ngaysinh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gioitinh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ngaybd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ngaykt" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThongTinBHXHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetThongTinBHXHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportHDHocVien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="soTiepNhan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportHDHocVienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportHDHocVienResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportHDHocVienChuyenDoi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="soTiepNhan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportHDHocVienChuyenDoiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportHDHocVienChuyenDoiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetThongTinBHXHSoapIn">
+    <wsdl:part name="parameters" element="tns:GetThongTinBHXH" />
+  </wsdl:message>
+  <wsdl:message name="GetThongTinBHXHSoapOut">
+    <wsdl:part name="parameters" element="tns:GetThongTinBHXHResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportHDHocVienSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportHDHocVien" />
+  </wsdl:message>
+  <wsdl:message name="ExportHDHocVienSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportHDHocVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportHDHocVienChuyenDoiSoapIn">
+    <wsdl:part name="parameters" element="tns:ExportHDHocVienChuyenDoi" />
+  </wsdl:message>
+  <wsdl:message name="ExportHDHocVienChuyenDoiSoapOut">
+    <wsdl:part name="parameters" element="tns:ExportHDHocVienChuyenDoiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TransferTTBHXHSoap">
+    <wsdl:operation name="GetThongTinBHXH">
+      <wsdl:input message="tns:GetThongTinBHXHSoapIn" />
+      <wsdl:output message="tns:GetThongTinBHXHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVien">
+      <wsdl:input message="tns:ExportHDHocVienSoapIn" />
+      <wsdl:output message="tns:ExportHDHocVienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVienChuyenDoi">
+      <wsdl:input message="tns:ExportHDHocVienChuyenDoiSoapIn" />
+      <wsdl:output message="tns:ExportHDHocVienChuyenDoiSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TransferTTBHXHSoap" type="tns:TransferTTBHXHSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetThongTinBHXH">
+      <soap:operation soapAction="http://tempuri.org/GetThongTinBHXH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVien">
+      <soap:operation soapAction="http://tempuri.org/ExportHDHocVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVienChuyenDoi">
+      <soap:operation soapAction="http://tempuri.org/ExportHDHocVienChuyenDoi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TransferTTBHXHSoap12" type="tns:TransferTTBHXHSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetThongTinBHXH">
+      <soap12:operation soapAction="http://tempuri.org/GetThongTinBHXH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVien">
+      <soap12:operation soapAction="http://tempuri.org/ExportHDHocVien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportHDHocVienChuyenDoi">
+      <soap12:operation soapAction="http://tempuri.org/ExportHDHocVienChuyenDoi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransferTTBHXH">
+    <wsdl:port name="TransferTTBHXHSoap" binding="tns:TransferTTBHXHSoap">
+      <soap:address location="http://180.93.18.249:6868/TransferTTBHXH.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TransferTTBHXHSoap12" binding="tns:TransferTTBHXHSoap12">
+      <soap12:address location="http://180.93.18.249:6868/TransferTTBHXH.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

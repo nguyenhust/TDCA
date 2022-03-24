@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<TITLE></TITLE>
+<META name="generator" content="BCL easyConverter SDK 3.0.60">
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 2px 0px 800px 50px;padding: 0px;border: none;width: 866px;}
+.ft0{font: 16px 'Arial';line-height: 18px;}
+.ft1{font: 19px 'Arial';line-height: 22px;}
+.ft2{font: 1px 'Arial';line-height: 1px;}
+.ft3{font: 16px 'Arial';line-height: 18px;}
+.ft4{font: 1px 'Arial';line-height: 15px;}
+.ft5{font: 13px 'Arial';line-height: 16px;}
+.ft6{font: 1px 'Arial';line-height: 11px;}
+
+.p0{text-align: left;padding-left: 88px;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;padding-left: 29px;margin-top: 3px;margin-bottom: 0px;}
+.p2{text-align: left;padding-left: 201px;margin-top: 7px;margin-bottom: 0px;}
+.p3{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+.p4{text-align: left;padding-left: 32px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p5{text-align: left;padding-left: 8px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p6{text-align: left;padding-left: 69px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p7{text-align: left;padding-left: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p8{text-align: left;padding-left: 9px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p9{text-align: left;padding-left: 15px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p10{text-align: left;padding-left: 16px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p11{text-align: left;padding-left: 528px;margin-top: 61px;margin-bottom: 0px;}
+.p12{text-align: left;padding-left: 587px;margin-top: 15px;margin-bottom: 0px;}
+
+.td0{padding: 0px;margin: 0px;width: 41px;vertical-align: bottom;}
+.td1{padding: 0px;margin: 0px;width: 161px;vertical-align: bottom;}
+.td2{padding: 0px;margin: 0px;width: 132px;vertical-align: bottom;}
+.td3{padding: 0px;margin: 0px;width: 121px;vertical-align: bottom;}
+.td4{padding: 0px;margin: 0px;width: 138px;vertical-align: bottom;}
+.td5{padding: 0px;margin: 0px;width: 81px;vertical-align: bottom;}
+.td6{padding: 0px;margin: 0px;width: 83px;vertical-align: bottom;}
+.td7{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 41px;vertical-align: bottom;}
+.td8{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 161px;padding-left: 5px;}
+.td9{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 65px;vertical-align: bottom;}
+.td10{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 67px;vertical-align: bottom;}
+.td11{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 80px;vertical-align: bottom;}
+.td12{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 138px;vertical-align: bottom;}
+.td13{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 81px;vertical-align: bottom;}
+.td14{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 83px;vertical-align: bottom;}
+.td15{border-left: #000000 1px solid;border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 39px;vertical-align: bottom;}
+.td16{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 64px;vertical-align: bottom;}
+.td17{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 66px;vertical-align: bottom;}
+.td18{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 79px;vertical-align: bottom;}
+.td19{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 137px;vertical-align: bottom;}
+.td20{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 80px;vertical-align: bottom;}
+.td21{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 82px;vertical-align: bottom;}
+    .td22 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 39px;
+        padding-left: 5px;
+    }
+.td23{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 64px;vertical-align: bottom;}
+    .td24 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 66px;
+        padding-left: 5px;
+    }
+
+    .td25 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 79px;
+        padding-left: 5px;
+    }
+    .td26 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 137px;
+        padding-left: 5px;
+    }
+    .td27 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 80px;
+        padding-left: 5px;
+    }
+    .td28 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 82px;
+        padding-left: 5px;
+    }
+
+.tr0{height: 28px;}
+.tr1{height: 15px;}
+.tr2{height: 18px;}
+.tr3{height: 11px;}
+    .tr4 {
+        height: 24px;
+    }
+
+.t0{width: 757px;margin-top: 4px;font: 13px 'Arial';}
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+
+
+<P class="p0 ft0">Bệnh viện Bạch Mai</P>
+<P class="p1 ft0">Trung tâm đào tạo và chỉ đạo tuyến</P>
+<P class="p2 ft1">BÁO CÁO QUẢN LÝ ẢNH CUNG CẤP</P>
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD class="tr0 td0"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD colspan=3 class="tr0 td2"><P class="p3 ft3" style="padding-left: 70px;">Từ ngày : $NgayBatDau</P></TD>
+	<TD colspan=2 class="tr0 td3"><P class="p4 ft3">Đến ngày : $NgayKetThuc</P></TD>
+	<TD class="tr0 td4"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td5"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td6"><P class="p3 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr1 td7"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td8"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td9"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td10"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td11"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td7"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td12"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td13"><P class="p3 ft4">&nbsp;</P></TD>
+	<TD class="tr1 td14"><P class="p3 ft4">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td15"><P class="p5 ft5">STT</P></TD>
+	<TD class="tr2 td1"><P class="p6 ft5">Nội dung ảnh</P></TD>
+	<TD class="tr2 td16"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr2 td17"><P class="p7 ft5">Số lượng</P></TD>
+	<TD class="tr2 td18"><P class="p8 ft5">Thời gian</P></TD>
+	<TD class="tr2 td0"><P class="p3 ft2">&nbsp;</P></TD>
+	<TD class="tr2 td19"><P class="p3 ft5">Đơn vị yêu cầu</P></TD>
+	<TD class="tr2 td20"><P class="p9 ft5">Kết quả</P></TD>
+	<TD class="tr2 td21"><P class="p10 ft5">Ghi chú</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td22"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td8"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td23"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td24"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td25"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td7"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td26"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td27"><P class="p3 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td28"><P class="p3 ft6">&nbsp;</P></TD>
+</TR>
+    $DataTable
+</TABLE>
+<P class="p11 ft5">Hà Nội, $NgayLapBaoCao</P>
+<P class="p12 ft5">Người báo cáo</P>
+<p style="height:50px"></p>
+<p class="p12 ft5" style="padding-left: 575px;">$NguoiLapBaoCao</p>
+</DIV>
+</BODY>
+</HTML>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04F12D35-332A-4A7D-A0A8-18CC30712697}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NETLINK.UI</RootNamespace>
+    <AssemblyName>NETLINK.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\BUILD_MCDT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>TDCA_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=8.1.14.804, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=8.1.14.804, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ChangePassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ChangePassWord.Designer.cs">
+      <DependentUpon>ChangePassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Condition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Condition.Designer.cs">
+      <DependentUpon>Condition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DictionaryEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DictionaryEx.Designer.cs">
+      <DependentUpon>DictionaryEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\NetLinkReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\NetLinkReport.Designer.cs">
+      <DependentUpon>NetLinkReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ParentChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ParentChild.Designer.cs">
+      <DependentUpon>ParentChild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PreviewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PreviewReport.Designer.cs">
+      <DependentUpon>PreviewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\Dictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dictionary.Designer.cs">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReportParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReportParameter.Designer.cs">
+      <DependentUpon>ReportParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\StatusBusy.cs" />
+    <Compile Include="UserControl\EditedBy_Time.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditedBy_Time.Designer.cs">
+      <DependentUpon>EditedBy_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\EditedBy_Name.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\EditedBy_Name.Designer.cs">
+      <DependentUpon>EditedBy_Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridViewHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridViewHoaDon.Designer.cs">
+      <DependentUpon>GridViewHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\netLink_DatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\netLink_DatePicker.Designer.cs">
+      <DependentUpon>netLink_DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\PrintButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\PrintButton.Designer.cs">
+      <DependentUpon>PrintButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\RichTextBoxWithBigEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\RichTextBoxWithBigEditor.Designer.cs">
+      <DependentUpon>RichTextBoxWithBigEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\RichTextBoxWithBigEditor_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl\RichTextBoxWithBigEditor_Form.Designer.cs">
+      <DependentUpon>RichTextBoxWithBigEditor_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UploadFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UploadFile.Designer.cs">
+      <DependentUpon>UploadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UsDictionary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UsDictionary.Designer.cs">
+      <DependentUpon>UsDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\VNRadGridLP.cs" />
+    <Compile Include="UserControl\WinPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\WinPart.Designer.cs">
+      <DependentUpon>WinPart.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ChangePassWord.resx">
+      <DependentUpon>ChangePassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Condition.resx">
+      <DependentUpon>Condition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DictionaryEx.resx">
+      <DependentUpon>DictionaryEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\NetLinkReport.resx">
+      <DependentUpon>NetLinkReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ParentChild.resx">
+      <DependentUpon>ParentChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PreviewReport.resx">
+      <DependentUpon>PreviewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\Dictionary.resx">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReportParameter.resx">
+      <DependentUpon>ReportParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridViewHoaDon.resx">
+      <DependentUpon>GridViewHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\PrintButton.resx">
+      <DependentUpon>PrintButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\RichTextBoxWithBigEditor.resx">
+      <DependentUpon>RichTextBoxWithBigEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\RichTextBoxWithBigEditor_Form.resx">
+      <DependentUpon>RichTextBoxWithBigEditor_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UploadFile.resx">
+      <DependentUpon>UploadFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UsDictionary.resx">
+      <DependentUpon>UsDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TDCA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SECURITY\SECURITY.csproj">
+      <Project>{8c6cc00a-f5a8-4bff-9391-f65a073408c4}</Project>
+      <Name>SECURITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_and_fax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

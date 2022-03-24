@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99C51FB4-F39B-49A3-902A-94A32486F1B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TruyenThong</RootNamespace>
+    <AssemblyName>TruyenThong</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\BUILD_MCDT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.LIB\TT_AnhVideo.cs" />
+    <Compile Include="TruyenThong.LIB\TT_AnhVideo_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_AnhVideo_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_AnPham.cs" />
+    <Compile Include="TruyenThong.LIB\TT_AnPham_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_AnPham_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_BaiViet.cs" />
+    <Compile Include="TruyenThong.LIB\TT_BaiViet_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_BaiViet_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhieuDangKyThietKe.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhieuDangKyThietKe_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhieuDangKyThietKe_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhongVan.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhongVanCT_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhongVanCT_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhongVan_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_PhongVan_Info.cs" />
+    <Compile Include="TruyenThong.LIB\TT_SuKien.cs" />
+    <Compile Include="TruyenThong.LIB\TT_SuKien_Coll.cs" />
+    <Compile Include="TruyenThong.LIB\TT_SuKien_Info.cs" />
+    <Compile Include="TruyenThong.UI\AnhVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\AnhVideo.Designer.cs">
+      <DependentUpon>AnhVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\AnPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\AnPham.Designer.cs">
+      <DependentUpon>AnPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\BaiViet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\BaiViet.Designer.cs">
+      <DependentUpon>BaiViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\Phongvan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\Phongvan.Designer.cs">
+      <DependentUpon>Phongvan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\DKThietKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\DKThietKe.Designer.cs">
+      <DependentUpon>DKThietKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UI\SuKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UI\SuKien.Designer.cs">
+      <DependentUpon>SuKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\AnhVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\AnhVideo.Designer.cs">
+      <DependentUpon>AnhVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\AnPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\AnPham.Designer.cs">
+      <DependentUpon>AnPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\BaiViet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\BaiViet.Designer.cs">
+      <DependentUpon>BaiViet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\DKThietKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\DKThietKe.Designer.cs">
+      <DependentUpon>DKThietKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\DropDownTinhTrang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\DropDownTinhTrang.Designer.cs">
+      <DependentUpon>DropDownTinhTrang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\PhongVan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\PhongVan.Designer.cs">
+      <DependentUpon>PhongVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\SuKien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TruyenThong.UserControl\SuKien.Designer.cs">
+      <DependentUpon>SuKien.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Authoration\Authoration.csproj">
+      <Project>{ad000bfc-6c0d-4a52-b45b-b1dfaf866ca8}</Project>
+      <Name>Authoration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarcodeLib\BarcodeLib.csproj">
+      <Project>{f8646414-0c9c-49bb-9da3-3923bf78a398}</Project>
+      <Name>BarcodeLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla.Windows\Csla.Windows.csproj">
+      <Project>{c333cfed-d5a6-47a2-96a6-f13ee2b71ecf}</Project>
+      <Name>Csla.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DanhMuc\DanhMuc.csproj">
+      <Project>{2ecb100d-801b-4778-bf19-b2bde89dee42}</Project>
+      <Name>DanhMuc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExportLib\ExportLib.csproj">
+      <Project>{4d92ca99-506f-4011-a5b7-4e07921a2e92}</Project>
+      <Name>ExportLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.UI\NETLINK.UI.csproj">
+      <Project>{04f12d35-332a-4a7d-a0a8-18cc30712697}</Project>
+      <Name>NETLINK.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SECURITY\SECURITY.csproj">
+      <Project>{8c6cc00a-f5a8-4bff-9391-f65a073408c4}</Project>
+      <Name>SECURITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\AnhVideo.resx">
+      <DependentUpon>AnhVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\AnPham.resx">
+      <DependentUpon>AnPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\BaiViet.resx">
+      <DependentUpon>BaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\Phongvan.resx">
+      <DependentUpon>Phongvan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\DKThietKe.resx">
+      <DependentUpon>DKThietKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UI\SuKien.resx">
+      <DependentUpon>SuKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\AnhVideo.resx">
+      <DependentUpon>AnhVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\AnPham.resx">
+      <DependentUpon>AnPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\AnPham.vi.resx">
+      <DependentUpon>AnPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\BaiViet.resx">
+      <DependentUpon>BaiViet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\DKThietKe.resx">
+      <DependentUpon>DKThietKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\PhongVan.resx">
+      <DependentUpon>PhongVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruyenThong.UserControl\SuKien.resx">
+      <DependentUpon>SuKien.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NguoiDung_Info.datasource" />
+    <None Include="Properties\DataSources\Authoration.UI.NguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.UI.NhomChucNang.datasource" />
+    <None Include="Properties\DataSources\Authoration.UI.NhomNguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.UserControls.NguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.UserControls.PhanHe.datasource" />
+    <None Include="Properties\DataSources\Authoration.UserControls.VaiTro.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CanBo_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenNganh_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CoQuan_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Loai_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VienKhoaPhong_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_AnhVideo.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_AnhVideo_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_AnPham.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_AnPham_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_BaiViet.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_BaiViet_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhieuDangKyThietKe.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhieuDangKyThietKe_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhieuDangKyThietKe_Info.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhongVan.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhongVanCT_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_PhongVan_Coll.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_SuKien.datasource" />
+    <None Include="Properties\DataSources\TruyenThong.LIB.TT_SuKien_Coll.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

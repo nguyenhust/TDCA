@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<configuration>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <appSettings>
+    <add key="CslaAuthentication" value="Csla" />
+    <add key="ReportPath" value="" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="TransferTTBHXHSoap" maxBufferPoolSize="2147483647"
+            maxReceivedMessageSize="2147483647" />
+        <binding name="TransferTTBHXHSoap1" maxBufferPoolSize="2147483647"
+            maxReceivedMessageSize="2147483647" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://180.93.18.249:6868/TransferTTBHXH.asmx"
+          binding="basicHttpBinding" bindingConfiguration="TransferTTBHXHSoap"
+          contract="ServiceReferenceHD.TransferTTBHXHSoap" name="TransferTTBHXHSoap" />
+      <endpoint address="http://192.168.51.7:6868/TransferTTBHXH.asmx"
+          binding="basicHttpBinding" bindingConfiguration="TransferTTBHXHSoap1"
+          contract="ServiceReferenceHDLan.TransferTTBHXHSoap" name="TransferTTBHXHSoap1" />
+    </client>
+  </system.serviceModel>
+  
+  <!--Tien 
+  <connectionStrings>
+    <add name="Connection" connectionString="g6YhyekZG/5TP803SmSIji+l50WUWh+ajfwgs5HLguOvIIt4vg+6VR6nuH6Jk89IhuDS6BLCMZ9Q320Oz1Uqm5gLtaGM7lYcDtxlgE0NARWqUiEkpB/QDOuQQ6YnQfjfx7iPyp0w0onJ7yqKW9Ir8w=="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  
+  <!--Máy chủ CDT 192.168.30.3 
+ <connectionStrings>
+    <add name="Connection" connectionString="g6YhyekZG/72kTas3JvV4AcHNgC8vD1qvvnx8VOHUtlmgVw5uiN2RS03Wicv5fMznSzMH+Xtm35gxx2fOTnad4gd2x4+tuidqlIhJKQf0AzrkEOmJ0H438e4j8qdMNKJye8qilvSK/M=" providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!--Máy chủ CDT 192.168.30.7 
+<connectionStrings>
+  <add name="Connection" connectionString="g6YhyekZG/72kTas3JvV4E2HWK2ZUBSevvnx8VOHUtlmgVw5uiN2RS03Wicv5fMznSzMH+Xtm35gxx2fOTnad4gd2x4+tuidqlIhJKQf0AzrkEOmJ0H438e4j8qdMNKJye8qilvSK/M="
+    providerName="System.Data.SqlClient" />
+</connectionStrings>-->
+  <!--Dat -->
+<connectionStrings>
+  <add name="Connection" connectionString="g6YhyekZG/7LuqQQ2udXxIdJUVf7VKuY2fF5Wp+nZeVK+euUgebfi6Kxp2FwdgZvwcyEdGay0i0VmbgNq4ibKJ37n8BdVDD+4DX2BFEbSxz+wsmfhfdL4A=="
+    providerName="System.Data.SqlClient" />
+</connectionStrings>
+  <!-- Data Migration
+    <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetXDYqzisUpqvMTA11zOrRkDnM3OPR3z7t7d8RNV+5fGcLRhuI43rhxROTgXn/H8LH4YwQEPaagXZOLaR0wPar03PaK7580ZyD2K5zeT37h2xZxM/GAuiYgbvhmrq9H9FszS+m4ZyeINiikn1WoV49/n"
+      providerName="System.Data.SqlClient" />
+    <add name="Connection2" connectionString="eKUeC+hNetXDYqzisUpqvMTA11zOrRkDnM3OPR3z7t7d8RNV+5fGcLRhuI43rhxRhcU55xSGRlJjiQTuSb8bOXWPaSrT2I5WDIes98gBAa4NUx/0W2qoxOgTIaDySjC4wDIbLTu7he6vyMPzsw76kg=="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!-- ket noi toi BHQcliet
+    <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetXDYqzisUpqvMTA11zOrRkDnM3OPR3z7t7d8RNV+5fGcLRhuI43rhxR3fkhjVjbrqni2kdMD2q9Nz2iu+fNGcg9iuc3k9+4dsWcTPxgLomIG74Zq6vR/RbM0vpuGcniDYopJ9VqFePf5w=="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!-- ket noi toi server 4thebigdreams.com
+    <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetWNxXzKl2wU1D0jaeMRnV5MZ3qH1tNPysF+C3a316QV1GNk/N8cwSQsXZDUdzUx5QxKhkNxslMmuQAYoLpCZ8of6p1QsVpE+oJ5sMaEU4KgQMe2oBnKPr+sch+/qXQQf+WTV8HlMnKyyZRjIen8xEUk"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!-- local host 
+  <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetUH2krqgdrdvOKBlN5oulrZZWWlnp53sq9cSW+12GDFx2imbGKB0pqO+FcMs3CdkANic28MPuOjJ5xM/GAuiYgbvhmrq9H9FszS+m4ZyeINiikn1WoV49/n"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!--Server Bach Mai 
+<connectionStrings>
+  <add name="Connection" connectionString="eKUeC+hNetU8xKEOTyIZyED/gBrLvd3r6negml4OW1menfuYUm5boM+AjAj0OOzwFSi4B5rMdJxhRBxt6rwMatXg5DlAVSPcFLlJVzAOXbgP00ni5kdrRF/sZVyJr3RuZyA9YsG/NAo="
+    providerName="System.Data.SqlClient" />
+</connectionStrings>-->
+  <!--Dat 
+  <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetVDwxExkD7DxQznACd3DD+/6negml4OW1menfuYUm5boB3goqSwYO3GQ4hJ4uACDPsbYEGWk/lH1Gauj9FrCdsC"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings> -->
+  <!-- Ket noi Server 192.168.1.24 sql2014>
+  <connectionStrings>
+    <add name="Connection" connectionString="g6YhyekZG/72kTas3JvV4K9Ag6tMx5HhSi+q9fT75Gu++fHxU4dS2WaBXDm6I3ZFEmM2nq/DoqgzGpM6Iv+GDAZeLyYVp9KXUM5eUEkfpBmljOHHESSefy4i71Fn4coS5mAP6lmQGmA="
+      providerName="System.Data.SqlClient" />
+    <add name="MMSConnection" connectionString="g6YhyekZG/72kTas3JvV4K9Ag6tMx5HhSi+q9fT75Gu++fHxU4dS2WaBXDm6I3ZFglLFYklnDN8rQVlQLN2sf0ZmeiWT5tw4YjWtiNeuN0ZtYTdsofByxX0w6ORNuZxN"
+      providerName="System.Data." />
+  </connectionStrings>-->
+  <!--Server TuyLV 
+
+  <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetUJfjxyvaRPL34LdrfXpBXUY2T83xzBJCyd/EUYhPOij/h3KMBUmlMFXmx611AFv3KxRRHNm9uSIxCLn56rC+8xI45HNntUk9+sP7SmEx4RdQ=="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings> -->
+  <!--Server 24 
+
+  <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetU8xKEOTyIZyN9tDu/2PfxP9nYVYaxLkVHqd6CaXg5bWZ6d+5hSblugz4CMCPQ47PAVKLgHmsx0nM8TVuUa6XNZouYG1ZP+k5UD1wMzl+zIOqr4xFspzBpAH5fmrhc/fPY="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!--Server A29-PC -->
+  <!-- <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetXuG8Uzw4zNYU0/EDGQXtL5i4mw3trbuE1+C3a316QV1GNk/N8cwSQsnfxFGITzoo/4dyjAVJpTBV5setdQBb9ysUURzZvbkiMQi5+eqwvvMSOORzZ7VJPfrD+0phMeEXU="
+      providerName="System.Data.SqlClient" />
+
+  </connectionStrings> -->
+  <!-- Ket noi Server 192.168.1.24 sql2014
+  <connectionStrings>
+    <add name="Connection" connectionString="eKUeC+hNetU8xKEOTyIZyN9tDu/2PfxP9nYVYaxLkVHqd6CaXg5bWZ6d+5hSblugz4CMCPQ47PAVKLgHmsx0nM8TVuUa6XNZouYG1ZP+k5UD1wMzl+zIOqr4xFspzBpAH5fmrhc/fPY="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+  <!-- Note
+[12/04/2014 10:06:01] Nguyễn Thiện: id teamviewer 976 075 078 pass 123456
+[12/04/2014 10:06:49] Nguyễn Thiện: account windows administrator pass ss
+[12/04/2014 10:08:59] Nguyễn Thiện: account SQL sa pass 123@a
+đường dẫn trên server : E:\MCDT\BoCaiPhanMem
+-->
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
+<!--
+
+Hướng dẫn cách publish application
+
+a click thử vào cái project TDCA
+[22:25:55] Hong Quang: chọn properties
+[22:26:00] Hong Quang: và phần publish đi
+[22:26:26] Hong Quang: cái publish location thì tùy a nhé
+[22:26:37] Hong Quang: cái installation folder url
+[22:26:42] Hong Quang: thì a chọn là
+[22:26:48] Hong Quang: http://192.168.30.3/MDCT/
+[22:27:01] Hong Quang: install mode thì:
+[22:27:10] Hong Quang: avaible offline
+[22:27:17] Hong Quang: version thì
+[22:27:22] Hong Quang: major là 2014
+[22:27:30] Hong Quang: minor là tháng hiện tại (06)
+[22:27:36] Hong Quang: build thì là ngày (01)
+[22:27:46] Dương Văn Phúc: uh
+[22:27:58] Hong Quang: tiêp
+[22:28:01] Hong Quang: phần updates
+[22:28:17] Hong Quang: a tích chọn cái application should check for update
+[22:28:26] Hong Quang: chọn before start
+[22:28:40] Hong Quang: tích chọn specify a minium required
+[22:28:50] Hong Quang: và chọn version giống hệt với bên ngoài
+[22:28:57] Hong Quang: 2014     06   01
+[22:29:03] Hong Quang: update location tương tự nhé
+[22:29:09] Hong Quang: http://192.168.30.3/MDCT/
+[22:29:11] Hong Quang: rồi ok
+[22:29:16] Hong Quang: và sau đó publish là xong
+[22:30:31] Hong Quang: h vào trong cái thư mục đấy
+[22:30:35] Hong Quang: a xem có đủ
+[22:30:41] Hong Quang: folder application files
+[22:30:44] Hong Quang: setup.exe
+[22:30:50] Hong Quang: và TDCA.application chưa
+[22:30:56] Hong Quang: đủ rồi thì nén nó lại
+[22:31:03] Hong Quang: và chuyển qua bên kia thôi
+[22:31:21] Hong Quang: về teamviewer của bên chỉ đạo tuyến
+
+
+
+Thông tin teamviewer của chỉ đạo tuyến
+
+
+[12/04/2014 10:06:01] Nguyễn Thiện: id teamviewer 976 075 078 pass 123456
+841 629 119
+[12/04/2014 10:06:49] Nguyễn Thiện: account windows administrator pass 123@123a
+[12/04/2014 10:08:59] Nguyễn Thiện: account SQL sa pass 123@a
+đường dẫn trên server : E:\MCDT\BoCaiPhanMem
+
+
+[22:47:50] Hong Quang: sau khi publish xong
+[22:48:00] Hong Quang: thì nó sẽ cho ra cái thư mục như em bảo lúc nãy
+[22:48:07] Hong Quang: a chỉ việc nén lại
+[22:48:12] Hong Quang: sau đó copy vào thư mục này
+[22:48:22] Hong Quang: giải nén đè lên các file ở thư mục gốc này
+[22:48:29] Hong Quang: sau đó run cái setup là được
+
+ftp: 192.168.30.3
+[09:52:01] Dương Văn Phúc: user: ftpuser
+[09:52:04] Dương Văn Phúc: pass: 123@123a
+-->

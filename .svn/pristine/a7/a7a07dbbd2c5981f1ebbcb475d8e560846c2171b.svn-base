@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title></title>
+    <meta name="generator" content="BCL easyConverter SDK 3.0.60">
+    <style type="text/css">
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        article {
+            float: left;
+            width: 10cm;
+            height: 6.7cm;
+            position: relative;
+            border: solid 1px #ccc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+            article img.anhnen {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 10cm;
+                height: 6.7cm;
+            }
+
+            article table.khungthe {
+                position: absolute;
+                top: 73px;
+                left: 0;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+        table, tr, td, p {
+            padding: 0;
+            margin: 0;
+        }
+
+        article p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        article img.anhhocvien {
+            width: 2.5cm;
+            height: 3.5cm;
+            /*position:relative;
+                top:-162px;
+                left:15px;*/
+        }
+
+        article .tenhocvien {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0094db;
+            text-align: center;
+            /*top: -242px;
+                left:50px;
+                position:relative;*/
+            font-size: 18px;
+            padding-top: 21px;
+        }
+
+        article .tenlop {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #f7ffff;
+            text-align: center;
+            /*top: -224px;
+                left:50px;
+                position:relative;*/
+            font-size: 12px;
+            width: 108%;
+        }
+
+        article .chuyennganh {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0b93cd;
+            text-align: center;
+            /*top: -224px;
+                left:50px;
+                position:relative;*/
+            font-size: 13px;
+            padding-top: 10px;
+        }
+
+        article .khoahoc {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0b93cd;
+            text-align: center;
+            /*top: -224px;
+                left:50px;
+                position:relative;*/
+            font-size: 13px;
+            padding-top: -10px;
+        }
+
+        @font-face {
+            font-family: "barcode font";
+            src: url('BarcodeFont.ttf') format('truetype');
+        }
+
+        article .barcode {
+            font-family: 'barcode font';
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    $DataTheHocVien
+    <!--<article>
+        <img class="anhnen" src="http://4thebigdreams.com/photos/anhthehocvien.jpg" />
+        <table class="khungthe">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><img class="anhhocvien" src='$anhthehocvien' /></td>
+                        </tr>
+                        <tr >
+                            <td><span class="barcode" >$mahocvien</span></td>
+                        </tr>
+                    </table>
+                    
+                    
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><p class="tenhocvien">$tenhocvien</p></td>
+                        </tr>
+                        <tr><td><p class="tenlop">$lophoc</p></td></tr>
+                        <tr><td><p class="chuyennganh">$chuyennganh</p></td></tr>
+                        <tr><td><p class="khoahoc">$khoahoc</p></td></tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+    </article>-->
+</body>
+</html>

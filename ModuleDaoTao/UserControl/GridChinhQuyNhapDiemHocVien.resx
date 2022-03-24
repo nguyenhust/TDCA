@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="radBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>146, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radGridView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="gridViewDecimalColumn1.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewDecimalColumn1.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="gridViewTextBoxColumn1.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Mã </value>
+  </data>
+  <data name="gridViewTextBoxColumn2.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="gridViewTextBoxColumn3.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>NgaySinh</value>
+  </data>
+  <data name="gridViewDateTimeColumn1.FormatString" xml:space="preserve">
+    <value>{0:d}</value>
+  </data>
+  <data name="gridViewDateTimeColumn1.HeaderText" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="gridViewTextBoxColumn4.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Số CMT</value>
+  </data>
+  <data name="gridViewTextBoxColumn5.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>GioiTinh</value>
+  </data>
+  <data name="gridViewDecimalColumn2.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewDecimalColumn2.HeaderText" xml:space="preserve">
+    <value>IdTrinhDo</value>
+  </data>
+  <data name="gridViewDecimalColumn3.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewDecimalColumn3.HeaderText" xml:space="preserve">
+    <value>IdChuyenNganh</value>
+  </data>
+  <data name="gridViewTextBoxColumn6.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>TruongTotNghiep</value>
+  </data>
+  <data name="gridViewDecimalColumn4.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewDecimalColumn4.HeaderText" xml:space="preserve">
+    <value>NamTotNghiep</value>
+  </data>
+  <data name="gridViewTextBoxColumn7.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>SoBang</value>
+  </data>
+  <data name="gridViewTextBoxColumn8.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>NoiCongTac</value>
+  </data>
+  <data name="gridViewTextBoxColumn9.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>DiaChiNhaRieng</value>
+  </data>
+  <data name="gridViewTextBoxColumn10.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn10.HeaderText" xml:space="preserve">
+    <value>DienThoaiNhaRieng</value>
+  </data>
+  <data name="gridViewTextBoxColumn11.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn11.HeaderText" xml:space="preserve">
+    <value>DiDong</value>
+  </data>
+  <data name="gridViewTextBoxColumn12.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn12.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="gridViewTextBoxColumn13.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn13.HeaderText" xml:space="preserve">
+    <value>NgayCapCMT</value>
+  </data>
+  <data name="gridViewTextBoxColumn14.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn14.HeaderText" xml:space="preserve">
+    <value>NoiCapCMT</value>
+  </data>
+  <data name="gridViewTextBoxColumn15.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn15.HeaderText" xml:space="preserve">
+    <value>NgayDangKi</value>
+  </data>
+  <data name="gridViewTextBoxColumn16.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn16.HeaderText" xml:space="preserve">
+    <value>Anh</value>
+  </data>
+  <data name="gridViewTextBoxColumn17.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn17.HeaderText" xml:space="preserve">
+    <value>DauVaoMon1</value>
+  </data>
+  <data name="gridViewDecimalColumn5.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewDecimalColumn5.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem1</value>
+  </data>
+  <data name="gridViewTextBoxColumn18.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn18.HeaderText" xml:space="preserve">
+    <value>DauVaoMon2</value>
+  </data>
+  <data name="gridViewDecimalColumn6.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem2</value>
+  </data>
+  <data name="gridViewTextBoxColumn19.HeaderText" xml:space="preserve">
+    <value>DauVaoMon3</value>
+  </data>
+  <data name="gridViewDecimalColumn7.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem3</value>
+  </data>
+  <data name="gridViewTextBoxColumn20.HeaderText" xml:space="preserve">
+    <value>DauVaoMon4</value>
+  </data>
+  <data name="gridViewDecimalColumn8.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem4</value>
+  </data>
+  <data name="gridViewTextBoxColumn21.HeaderText" xml:space="preserve">
+    <value>DauVaoMon5</value>
+  </data>
+  <data name="gridViewDecimalColumn9.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem5</value>
+  </data>
+  <data name="gridViewTextBoxColumn22.HeaderText" xml:space="preserve">
+    <value>DauVaoMon6</value>
+  </data>
+  <data name="gridViewDecimalColumn10.HeaderText" xml:space="preserve">
+    <value>DauVaoDiem6</value>
+  </data>
+  <data name="gridViewTextBoxColumn23.HeaderText" xml:space="preserve">
+    <value>DanToc</value>
+  </data>
+  <data name="gridViewTextBoxColumn24.HeaderText" xml:space="preserve">
+    <value>TonGiao</value>
+  </data>
+  <data name="gridViewTextBoxColumn25.HeaderText" xml:space="preserve">
+    <value>QuanHeGiaDinh</value>
+  </data>
+  <data name="gridViewCheckBoxColumn1.HeaderText" xml:space="preserve">
+    <value>DuocPhepThiLai</value>
+  </data>
+  <data name="gridViewTextBoxColumn26.HeaderText" xml:space="preserve">
+    <value>LyDoKhongDuocThiLai</value>
+  </data>
+  <data name="gridViewDecimalColumn11.HeaderText" xml:space="preserve">
+    <value>LastEdited_User</value>
+  </data>
+  <data name="gridViewTextBoxColumn27.HeaderText" xml:space="preserve">
+    <value>LastEdited_Date</value>
+  </data>
+  <data name="gridViewTextBoxColumn28.HeaderText" xml:space="preserve">
+    <value>Backup01</value>
+  </data>
+  <data name="gridViewTextBoxColumn29.HeaderText" xml:space="preserve">
+    <value>Backup02</value>
+  </data>
+  <data name="gridViewTextBoxColumn30.HeaderText" xml:space="preserve">
+    <value>Backup03</value>
+  </data>
+  <data name="gridViewTextBoxColumn31.HeaderText" xml:space="preserve">
+    <value>Backup04</value>
+  </data>
+  <data name="gridViewDecimalColumn12.HeaderText" xml:space="preserve">
+    <value>Backup05</value>
+  </data>
+  <data name="gridViewDecimalColumn13.HeaderText" xml:space="preserve">
+    <value>Backup06</value>
+  </data>
+  <data name="gridViewTextBoxColumn32.HeaderText" xml:space="preserve">
+    <value>Backup07</value>
+  </data>
+  <data name="gridViewTextBoxColumn33.HeaderText" xml:space="preserve">
+    <value>Backup08</value>
+  </data>
+  <data name="gridViewTextBoxColumn34.HeaderText" xml:space="preserve">
+    <value>TongHocPhiPhaiDong</value>
+  </data>
+  <data name="gridViewTextBoxColumn35.HeaderText" xml:space="preserve">
+    <value>TongHocPhiDaDong</value>
+  </data>
+  <data name="gridViewTextBoxColumn36.HeaderText" xml:space="preserve">
+    <value>AllInOneHoaDon</value>
+  </data>
+  <data name="gridViewDecimalColumn14.HeaderText" xml:space="preserve">
+    <value>SoLanInThe</value>
+  </data>
+  <data name="gridViewDecimalColumn15.HeaderText" xml:space="preserve">
+    <value>SoLanInBangDiem</value>
+  </data>
+  <data name="gridViewDecimalColumn16.HeaderText" xml:space="preserve">
+    <value>SoLanInBang</value>
+  </data>
+  <data name="gridViewDecimalColumn17.HeaderText" xml:space="preserve">
+    <value>IdLopHoc</value>
+  </data>
+  <data name="gridViewTextBoxColumn37.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn37.HeaderText" xml:space="preserve">
+    <value>Lớp</value>
+  </data>
+  <data name="gridViewTextBoxColumn38.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn38.HeaderText" xml:space="preserve">
+    <value>Khóa</value>
+  </data>
+  <data name="gridViewTextBoxColumn39.FormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridViewTextBoxColumn39.HeaderText" xml:space="preserve">
+    <value>Chuyên Khoa</value>
+  </data>
+  <data name="gridViewTextBoxColumn40.HeaderText" xml:space="preserve">
+    <value>TenChuyenNganhLop</value>
+  </data>
+  <data name="gridViewTextBoxColumn41.HeaderText" xml:space="preserve">
+    <value>TenNamHocLop</value>
+  </data>
+  <data name="gridViewTextBoxColumn42.HeaderText" xml:space="preserve">
+    <value>TenMaLop</value>
+  </data>
+  <data name="gridViewTextBoxColumn43.HeaderText" xml:space="preserve">
+    <value>TenChuyenNganh</value>
+  </data>
+  <data name="gridViewTextBoxColumn44.HeaderText" xml:space="preserve">
+    <value>TenTrinhDo</value>
+  </data>
+  <data name="gridViewDateTimeColumn2.HeaderText" xml:space="preserve">
+    <value>DateNgayDangKi</value>
+  </data>
+  <data name="radGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1140, 258</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="radGridView1.Text" xml:space="preserve">
+    <value>radGridView1</value>
+  </data>
+  <data name="&gt;&gt;radGridView1.Name" xml:space="preserve">
+    <value>radGridView1</value>
+  </data>
+  <data name="&gt;&gt;radGridView1.Type" xml:space="preserve">
+    <value>Telerik.WinControls.UI.RadGridView, Telerik.WinControls.GridView, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e</value>
+  </data>
+  <data name="&gt;&gt;radGridView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;radBindingSource.Name" xml:space="preserve">
+    <value>radBindingSource</value>
+  </data>
+  <data name="&gt;&gt;radBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GridChinhQuyNhapDiemHocVien</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>NETLINK.UI.UsDictionary, NETLINK.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

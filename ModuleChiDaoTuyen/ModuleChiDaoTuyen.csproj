@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95BD3F89-0CDF-47B8-8D0A-26732FC26F24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuleChiDaoTuyen</RootNamespace>
+    <AssemblyName>ModuleChiDaoTuyen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoDiTinh.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoDiTinh_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoDiTinh_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoNhanCGKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoNhanCGKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_CanBoNhanCGKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_GoiKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_GoiKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_GoiKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_BVThamGia.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_BVThamGia_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_BVThamGia_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_Detail.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HoiChuan_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDongCGKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDongCGKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDongCGKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT_CanBoTrienKhai.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT_CanBoTrienKhai_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT_CanBoTrienKhai_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_HopDong_GoiKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_KinhPhiCGKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_KinhPhiCGKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_KinhPhiCGKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_LoaiHinhChuyenGiao.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_LoaiHinhChuyenGiao_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_LoaiHinhChuyenGiao_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_BMVeHoTro.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_BMVeHoTro_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_BMVeHoTro_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_CanBoDiHoc.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_CanBoDiHoc_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_CanBoDiHoc_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuDeDaoTao.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuDeDaoTao_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuDeDaoTao_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuyenNganhHoc.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuyenNganhHoc_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ChuyenNganhHoc_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoChinhQuy.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoChinhQuy_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoChinhQuy_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucBVBM.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucBVBM_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucBVBM_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucTaiCho.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucTaiCho_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DaoTaoLienTucTaiCho_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DeAn1816.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DeAn1816_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DeAn1816_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DTSauDH.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DTSauDH_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_DTSauDH_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_KeHoachBM.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_KeHoachBM_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_KeHoachBM_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_LoaiHinhDaoTao.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_LoaiHinhDaoTao_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_LoaiHinhDaoTao_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ToChucTuyenTruoc.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ToChucTuyenTruoc_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_ToChucTuyenTruoc_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_YeuCauHoTro.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_YeuCauHoTro_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_PhieuKhaoSat_YeuCauHoTro_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_ThietBiCGKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_ThietBiCGKT_Coll.cs" />
+    <Compile Include="ModuleChiDaoTuyen.LIB\CDT_ThietBiCGKT_Info.cs" />
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_TaiChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_TaiChinh.Designer.cs">
+      <DependentUpon>Form_TaiChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_CanBoDiTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_CanBoDiTinh.Designer.cs">
+      <DependentUpon>Form_CanBoDiTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_GiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_GiangVien.Designer.cs">
+      <DependentUpon>Form_GiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\CanBoNhanCGKT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\CanBoNhanCGKT.Designer.cs">
+      <DependentUpon>CanBoNhanCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_HopDongCGKT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\Form_HopDongCGKT.Designer.cs">
+      <DependentUpon>Form_HopDongCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\PhieuKhaoSatTuyenTruoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\PhieuKhaoSatTuyenTruoc.Designer.cs">
+      <DependentUpon>PhieuKhaoSatTuyenTruoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\GoiKyThuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\GoiKyThuat.Designer.cs">
+      <DependentUpon>GoiKyThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\HoiChuanTrucTuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\HoiChuanTrucTuyen.designer.cs">
+      <DependentUpon>HoiChuanTrucTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\HopDongCGKT.cs" />
+    <Compile Include="ModuleChiDaoTuyen.UI\HopDongCGKT.Designer.cs">
+      <DependentUpon>HopDongCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\PhieuKhaoSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UI\PhieuKhaoSat.Designer.cs">
+      <DependentUpon>PhieuKhaoSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoDiTinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoDiTinh.Designer.cs">
+      <DependentUpon>GridCanBoDiTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHopDongCGKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHopDongCGKT.Designer.cs">
+      <DependentUpon>GridHopDongCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\CBNhanCGKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\CBNhanCGKT.Designer.cs">
+      <DependentUpon>CBNhanCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownGoiKyThuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownGoiKyThuat.Designer.cs">
+      <DependentUpon>DropDownGoiKyThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownHopDong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownHopDong.Designer.cs">
+      <DependentUpon>DropDownHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownLoaiHinhChuyenGiao.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownLoaiHinhChuyenGiao.Designer.cs">
+      <DependentUpon>DropDownLoaiHinhChuyenGiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownLoaiHC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownLoaiHC.Designer.cs">
+      <DependentUpon>DropDownLoaiHC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownTrangThaiCNTT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownTrangThaiCNTT.Designer.cs">
+      <DependentUpon>DropDownTrangThaiCNTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCDTReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCDTReport.Designer.cs">
+      <DependentUpon>GridCDTReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridGoiKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridGoiKT.Designer.cs">
+      <DependentUpon>GridGoiKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridThietBiCGKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridThietBiCGKT.Designer.cs">
+      <DependentUpon>GridThietBiCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridKinhPhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridKinhPhi.Designer.cs">
+      <DependentUpon>GridKinhPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoCGKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoCGKT.Designer.cs">
+      <DependentUpon>GridCanBoCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownHopDongGoiKyThuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\DropDownHopDongGoiKyThuat.Designer.cs">
+      <DependentUpon>DropDownHopDongGoiKyThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoNhanCGKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridCanBoNhanCGKT.Designer.cs">
+      <DependentUpon>GridCanBoNhanCGKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHoiThaoTrucTuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHoiThaoTrucTuyen.Designer.cs">
+      <DependentUpon>GridHoiThaoTrucTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHopDongGoiKT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridHopDongGoiKT.Designer.cs">
+      <DependentUpon>GridHopDongGoiKT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridPhieuKhaoSat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModuleChiDaoTuyen.UserControl\GridPhieuKhaoSat.Designer.cs">
+      <DependentUpon>GridPhieuKhaoSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\Form_TaiChinh.resx">
+      <DependentUpon>Form_TaiChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\Form_CanBoDiTinh.resx">
+      <DependentUpon>Form_CanBoDiTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\Form_GiangVien.resx">
+      <DependentUpon>Form_GiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\CanBoNhanCGKT.resx">
+      <DependentUpon>CanBoNhanCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\Form_HopDongCGKT.resx">
+      <DependentUpon>Form_HopDongCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\PhieuKhaoSatTuyenTruoc.resx">
+      <DependentUpon>PhieuKhaoSatTuyenTruoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\GoiKyThuat.resx">
+      <DependentUpon>GoiKyThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\HoiChuanTrucTuyen.resx">
+      <DependentUpon>HoiChuanTrucTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\HopDongCGKT.resx">
+      <DependentUpon>HopDongCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UI\PhieuKhaoSat.resx">
+      <DependentUpon>PhieuKhaoSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridCanBoDiTinh.resx">
+      <DependentUpon>GridCanBoDiTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridHopDongCGKT.resx">
+      <DependentUpon>GridHopDongCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridHopDongCGKT.vi.resx">
+      <DependentUpon>GridHopDongCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\CBNhanCGKT.resx">
+      <DependentUpon>CBNhanCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridCDTReport.resx">
+      <DependentUpon>GridCDTReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridGoiKT.resx">
+      <DependentUpon>GridGoiKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridThietBiCGKT.resx">
+      <DependentUpon>GridThietBiCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridKinhPhi.resx">
+      <DependentUpon>GridKinhPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridCanBoCGKT.resx">
+      <DependentUpon>GridCanBoCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridCanBoNhanCGKT.resx">
+      <DependentUpon>GridCanBoNhanCGKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridHoiThaoTrucTuyen.resx">
+      <DependentUpon>GridHoiThaoTrucTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridHopDongGoiKT.resx">
+      <DependentUpon>GridHopDongGoiKT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleChiDaoTuyen.UserControl\GridPhieuKhaoSat.resx">
+      <DependentUpon>GridPhieuKhaoSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authoration\Authoration.csproj">
+      <Project>{ad000bfc-6c0d-4a52-b45b-b1dfaf866ca8}</Project>
+      <Name>Authoration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla.Windows\Csla.Windows.csproj">
+      <Project>{c333cfed-d5a6-47a2-96a6-f13ee2b71ecf}</Project>
+      <Name>Csla.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DanhMuc\DanhMuc.csproj">
+      <Project>{2ecb100d-801b-4778-bf19-b2bde89dee42}</Project>
+      <Name>DanhMuc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExportLib\ExportLib.csproj">
+      <Project>{4d92ca99-506f-4011-a5b7-4e07921a2e92}</Project>
+      <Name>ExportLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleDaoTao\ModuleDaoTao.csproj">
+      <Project>{a3e7d5ab-f2c6-470d-bcb2-359f492ecd7b}</Project>
+      <Name>ModuleDaoTao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.UI\NETLINK.UI.csproj">
+      <Project>{04f12d35-332a-4a7d-a0a8-18cc30712697}</Project>
+      <Name>NETLINK.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SECURITY\SECURITY.csproj">
+      <Project>{8c6cc00a-f5a8-4bff-9391-f65a073408c4}</Project>
+      <Name>SECURITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BenhVien.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BoPhan.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BoPhan_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BoPhan_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BenhVien_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_BenhVien_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CanBo.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CanBo_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CanBo_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChucVu_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChucVu_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenKhoa.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenKhoa_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenKhoa_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenNganh.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenNganh_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_ChuyenNganh_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CoQuan_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CoQuan_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_DanToc_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_DanToc_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_DonViTinh_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_DonViTinh_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_GioiTinh_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_GioiTInh_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_HocHam_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_HocHam_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_HocVi_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_HocVi_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Loai_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Loai_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_MonHoc_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_MonHoc_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_NguonKinhPhi_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_NguonKinhPhi_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_PARAMETERES_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_PARAMETERES_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Phong_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Phong_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_QuocGia_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_QuocGia_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLChucVuBV_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLChucVuBV_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLHocHamBV_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLHocHamBV_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLHocViBV_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_SLHocViBV_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Tinh.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_TinhChild_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_TinhChild_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Tinh_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_Tinh_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VatTu.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VatTu_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VatTu_Info.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VienKhoaPhong_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_VienKhoaPhong_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_CanBoDiTinh_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_CanBoNhanCGKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_CanBoNhanCGKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_CanBoNhanCGKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_GoiKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_GoiKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_GoiKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuan.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuanBVThamGia_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuanBVThamGia_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuan_BVThamGia.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuan_BVThamGia_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuan_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HoiChuan_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDongCGKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDongCGKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDongCGKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_CanBoTrienKhai.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_CanBoTrienKhai_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_CanBoTrienKhai_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_Join_CDT_GoiKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_Join_CDT_GoiKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_HopDong_GoiKT_Join_CDT_GoiKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_KinhPhiCGKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_KinhPhiCGKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_KinhPhiCGKT_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_LoaiHinhChuyenGiao.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_LoaiHinhChuyenGiao_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_BMVeHoTro.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_BMVeHoTro_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_BMVeHoTro_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_CanBoDiHoc.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_CanBoDiHoc_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_CanBoDiHoc_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuDeDaoTao.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuDeDaoTao_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuDeDaoTao_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuyenNganhHoc.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuyenNganhHoc_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ChuyenNganhHoc_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoChinhQuy_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoChinhQuy_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoLienTucBVBM.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoLienTucBVBM_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoLienTucBVBM_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoLienTucTaiCho_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DaoTaoLienTucTaiCho_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DeAn1816.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DeAn1816_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DeAn1816_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DTSauDH.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DTSauDH_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_DTSauDH_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_KeHoachBM.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_KeHoachBM_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_KeHoachBM_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_LoaiHinhDaoTao.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_LoaiHinhDaoTao_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_LoaiHinhDaoTao_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ToChucTuyenTruoc.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ToChucTuyenTruoc_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_ToChucTuyenTruoc_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_YeuCauHoTro.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_YeuCauHoTro_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_PhieuKhaoSat_YeuCauHoTro_Info.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_ShareConstant.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_ThietBiCGKT.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_ThietBiCGKT_Coll.datasource" />
+    <None Include="Properties\DataSources\ModuleChiDaoTuyen.LIB.CDT_ThietBiCGKT_Info.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

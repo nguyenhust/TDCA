@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD000BFC-6C0D-4A52-B45B-B1DFAF866CA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Authoration</RootNamespace>
+    <AssemblyName>Authoration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\BUILD_MCDT\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authoration.LIB\ADM_ChucNang_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_ChucNang_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_NguoiDung.cs" />
+    <Compile Include="Authoration.LIB\ADM_NguoiDung_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_NguoiDung_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomChucNang.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomChucNang_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomChucNang_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomNguoiDung.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomNguoiDung_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_NhomNguoiDung_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_PhanHe_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_PhanHe_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_QuyenNguoiDung_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_QuyenNguoiDung_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_QuyenNhomNguoiDung_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_QuyenNhomNguoiDung_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_ThanhVien_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_ThanhVien_Info.cs" />
+    <Compile Include="Authoration.LIB\ADM_VaiTro_Coll.cs" />
+    <Compile Include="Authoration.LIB\ADM_VaiTro_Info.cs" />
+    <Compile Include="Authoration.UI\NguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authoration.UI\NguoiDung.Designer.cs">
+      <DependentUpon>NguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UI\NhomChucNang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authoration.UI\NhomChucNang.Designer.cs">
+      <DependentUpon>NhomChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UI\NhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authoration.UI\NhomNguoiDung.Designer.cs">
+      <DependentUpon>NhomNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\DropDownUser_CanBo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\DropDownUser_CanBo.Designer.cs">
+      <DependentUpon>DropDownUser_CanBo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\DropDownUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\DropDownUser.Designer.cs">
+      <DependentUpon>DropDownUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\NguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\NguoiDung.Designer.cs">
+      <DependentUpon>NguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\NhomNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\NhomNguoiDung.Designer.cs">
+      <DependentUpon>NhomNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\PhanHe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\PhanHe.Designer.cs">
+      <DependentUpon>PhanHe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.UserControls\VaiTro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Authoration.UserControls\VaiTro.Designer.cs">
+      <DependentUpon>VaiTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authoration.LIB\PTIdentity.cs" />
+    <Compile Include="Authoration.LIB\PTPrincipal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csla.Windows\Csla.Windows.csproj">
+      <Project>{c333cfed-d5a6-47a2-96a6-f13ee2b71ecf}</Project>
+      <Name>Csla.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DanhMuc\DanhMuc.csproj">
+      <Project>{2ecb100d-801b-4778-bf19-b2bde89dee42}</Project>
+      <Name>DanhMuc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.UI\NETLINK.UI.csproj">
+      <Project>{04f12d35-332a-4a7d-a0a8-18cc30712697}</Project>
+      <Name>NETLINK.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Authoration.UI\NguoiDung.resx">
+      <DependentUpon>NguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UI\NhomChucNang.resx">
+      <DependentUpon>NhomChucNang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UI\NhomNguoiDung.resx">
+      <DependentUpon>NhomNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\DropDownUser_CanBo.resx">
+      <DependentUpon>DropDownUser_CanBo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\DropDownUser.resx">
+      <DependentUpon>DropDownUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\NguoiDung.resx">
+      <DependentUpon>NguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\NhomNguoiDung.resx">
+      <DependentUpon>NhomNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\PhanHe.resx">
+      <DependentUpon>PhanHe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authoration.UserControls\VaiTro.resx">
+      <DependentUpon>VaiTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_ChucNang_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NguoiDung_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NhomChucNang.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NhomChucNang_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NhomNguoiDung.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_NhomNguoiDung_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_PhanHe_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_QuyenNguoiDung_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_QuyenNhomNguoiDung_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_ThanhVien_Coll.datasource" />
+    <None Include="Properties\DataSources\Authoration.LIB.ADM_VaiTro_Coll.datasource" />
+    <None Include="Properties\DataSources\DanhMuc.LIB.DIC_CanBo_Coll.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

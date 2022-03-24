@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3E7D5AB-F2C6-470D-BCB2-359F492ECD7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuleDaoTao</RootNamespace>
+    <AssemblyName>ModuleDaoTao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>E:\Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>E:\Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetReport.cs">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIB\BienLaiColl.cs" />
+    <Compile Include="LIB\BienLaiInfo.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_GiangVienMonHoc.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_GiangVienMonHoc_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_GiangVienMonHoc_Info.cs" />
+    <Compile Include="LIB\DT_LichGiangTheoLop.cs" />
+    <Compile Include="LIB\DT_LichGiangTheoLop_Coll.cs" />
+    <Compile Include="LIB\DT_LichGiangTheoLop_CT_Coll.cs" />
+    <Compile Include="LIB\DT_LichGiangTheoLop_CT_Info.cs" />
+    <Compile Include="LIB\DT_LichGiangTheoLop_Info.cs" />
+    <Compile Include="LIB\DT_LienTuc_GiangVien.cs" />
+    <Compile Include="LIB\DT_LienTuc_GiangVien_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_GiangVien_Info.cs" />
+    <Compile Include="LIB\DT_Lientuc_HocVienRangeTime.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_DiemThi.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_DiemThi_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_DiemThi_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_HocVien.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_HocVienSearch.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_HocVien_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_HocVien_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_KhenThuongKyLuat.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_KhenThuongKyLuat_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_KhenThuongKyLuat_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_LopHoc.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_LopHoc_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_LopHoc_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_MonHoc.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_MonHoc_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_MonHoc_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_TamTru.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_TamTru_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_TamTru_Info.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_ThoiKhoaBieu.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_ThoiKhoaBieu_Coll.cs" />
+    <Compile Include="LIB\DT_ChinhQuy_ThoiKhoaBieu_Info.cs" />
+    <Compile Include="LIB\DT_Common.cs" />
+    <Compile Include="LIB\DT_DuAn.cs" />
+    <Compile Include="LIB\DT_DuAn_Coll.cs" />
+    <Compile Include="LIB\DT_DuAn_Info.cs" />
+    <Compile Include="LIB\DT_Group.cs" />
+    <Compile Include="LIB\DT_Group_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_HocVien.cs" />
+    <Compile Include="LIB\DT_Lientuc_HocVienSearch.cs" />
+    <Compile Include="LIB\DT_LienTuc_HocVien_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_HocVien_Info.cs" />
+    <Compile Include="LIB\DT_LienTuc_KhungLopHoc.cs" />
+    <Compile Include="LIB\DT_LienTuc_KhungLopHoc_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_KhungLopHoc_Info.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc_DiaDiemToChuc.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc_DiaDiemToChuc_Coll.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc_DiaDiemToChuc_Info.cs" />
+    <Compile Include="LIB\DT_LienTuc_LopHoc_Info.cs" />
+    <Compile Include="LIB\DT_NghienCuuKhoaHoc.cs" />
+    <Compile Include="LIB\DT_NghienCuuKhoaHoc_Coll.cs" />
+    <Compile Include="LIB\DT_NghienCuuKhoaHoc_Info.cs" />
+    <Compile Include="LIB\HC_LichLamViecTheoPhong.cs" />
+    <Compile Include="LIB\HC_LichLamViecTheoPhong_Coll.cs" />
+    <Compile Include="LIB\HC_LichLamViecTheoPhong_CT_Coll.cs" />
+    <Compile Include="LIB\HC_LichLamViecTheoPhong_CT_Info.cs" />
+    <Compile Include="LIB\HC_LichLamViecTheoPhong_Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BackupForm_LT_HocVienLienTuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BackupForm_LT_HocVienLienTuc.Designer.cs">
+      <DependentUpon>BackupForm_LT_HocVienLienTuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_BangChamCongGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_BangChamCongGV.Designer.cs">
+      <DependentUpon>Form_BangChamCongGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_HocVien_Chua_Upload_Images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_HocVien_Chua_Upload_Images.Designer.cs">
+      <DependentUpon>Form_HocVien_Chua_Upload_Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Import_HocVien_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Import_HocVien_Excel.Designer.cs">
+      <DependentUpon>Form_Import_HocVien_Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBienLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormBienLai.designer.cs">
+      <DependentUpon>FormBienLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc_Diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc_Diem.Designer.cs">
+      <DependentUpon>Form_LT_LopHoc_Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHocDiaDiemToChuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHocDiaDiemToChuc.Designer.cs">
+      <DependentUpon>Form_LT_LopHocDiaDiemToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHocGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHocGiangVien.Designer.cs">
+      <DependentUpon>Form_LT_LopHocGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_DiemThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_DiemThi.Designer.cs">
+      <DependentUpon>Form_CQ_DiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_DiemThiTheoLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_DiemThiTheoLop.Designer.cs">
+      <DependentUpon>Form_CQ_DiemThiTheoLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_HocPhiChinhQuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_HocPhiChinhQuy.Designer.cs">
+      <DependentUpon>Form_CQ_HocPhiChinhQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_KhenThuongKiLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_KhenThuongKiLuat.Designer.cs">
+      <DependentUpon>Form_CQ_KhenThuongKiLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_LopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_LopHoc.Designer.cs">
+      <DependentUpon>Form_CQ_LopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_LopHocMonHocGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_LopHocMonHocGiangVien.Designer.cs">
+      <DependentUpon>Form_CQ_LopHocMonHocGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_TamTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_TamTru.Designer.cs">
+      <DependentUpon>Form_CQ_TamTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_DA_DuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_DA_DuAn.Designer.cs">
+      <DependentUpon>Form_DA_DuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_MonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_MonHoc.Designer.cs">
+      <DependentUpon>Form_CQ_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_ThoiKhoaBieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_ThoiKhoaBieu.Designer.cs">
+      <DependentUpon>Form_CQ_ThoiKhoaBieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_TaiLenLichHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_TaiLenLichHoc.Designer.cs">
+      <DependentUpon>Form_CQ_TaiLenLichHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_NhapDiemThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_NhapDiemThi.Designer.cs">
+      <DependentUpon>Form_CQ_NhapDiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_CQ_HocVienChinhQuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_CQ_HocVienChinhQuy.Designer.cs">
+      <DependentUpon>Form_CQ_HocVienChinhQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_InDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_InDiemDanh.Designer.cs">
+      <DependentUpon>Form_InDiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_NhapDiemThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_NhapDiemThi.Designer.cs">
+      <DependentUpon>Form_LT_NhapDiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_NhapHocPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_NhapHocPhi.Designer.cs">
+      <DependentUpon>Form_LT_NhapHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_ThongKe.Designer.cs">
+      <DependentUpon>Form_LT_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_TraCuuHocPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_TraCuuHocPhi.Designer.cs">
+      <DependentUpon>Form_LT_TraCuuHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_ThemLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_ThemLopHoc.Designer.cs">
+      <DependentUpon>Form_LT_ThemLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc.Designer.cs">
+      <DependentUpon>Form_LT_LopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_HocVienLienTuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_HocVienLienTuc.Designer.cs">
+      <DependentUpon>Form_LT_HocVienLienTuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_ChuyenGiaoHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_ChuyenGiaoHocVien.Designer.cs">
+      <DependentUpon>Form_LT_ChuyenGiaoHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_NCKH_NghienCuuKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_NCKH_NghienCuuKhoaHoc.Designer.cs">
+      <DependentUpon>Form_NCKH_NghienCuuKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_ThongKeHocPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_ThongKeHocPhi.Designer.cs">
+      <DependentUpon>Form_ThongKeHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_LT_LopHoc_Print.Designer.cs">
+      <DependentUpon>Form_LT_LopHoc_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FromNhapSoTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FromNhapSoTien.Designer.cs">
+      <DependentUpon>FromNhapSoTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Add_LichGiang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Add_LichGiang.Designer.cs">
+      <DependentUpon>Form_Add_LichGiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BackupGridHocVienLienTucDiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\BackupGridHocVienLienTucDiem.Designer.cs">
+      <DependentUpon>BackupGridHocVienLienTucDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucThongKe.Designer.cs">
+      <DependentUpon>GridHocVienLienTucThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownLoaiHinhDaoTao.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownLoaiHinhDaoTao.Designer.cs">
+      <DependentUpon>DropDownLoaiHinhDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownNam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownNam.Designer.cs">
+      <DependentUpon>DropDownNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhBSNT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhBSNT.Designer.cs">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhBSNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKII.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKII.Designer.cs">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhCKII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKI.Designer.cs">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhCKI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridKhungLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridKhungLopHoc.Designer.cs">
+      <DependentUpon>GridKhungLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDaInThe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDaInThe.Designer.cs">
+      <DependentUpon>GridHocVienLienTucDaInThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucChuaInThe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucChuaInThe.Designer.cs">
+      <DependentUpon>GridHocVienLienTucChuaInThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucChuaInChungChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucChuaInChungChi.Designer.cs">
+      <DependentUpon>GridHocVienLienTucChuaInChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDaInChungChi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDaInChungChi.Designer.cs">
+      <DependentUpon>GridHocVienLienTucDaInChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyMonHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyMonHoc.Designer.cs">
+      <DependentUpon>GridChinhQuyMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyNhapDiemHocVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyNhapDiemHocVien.Designer.cs">
+      <DependentUpon>GridChinhQuyNhapDiemHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyNhapDiemLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyNhapDiemLopHoc.Designer.cs">
+      <DependentUpon>GridChinhQuyNhapDiemLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyHocPhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyHocPhi.Designer.cs">
+      <DependentUpon>GridChinhQuyHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridChinhQuyLopHoc.Designer.cs">
+      <DependentUpon>GridChinhQuyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucInHenChungNhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucInHenChungNhan.Designer.cs">
+      <DependentUpon>GridHocVienLienTucInHenChungNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucDiem.Designer.cs">
+      <DependentUpon>GridHocVienLienTucDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucHocPhiHoanTien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucHocPhiHoanTien.Designer.cs">
+      <DependentUpon>GridHocVienLienTucHocPhiHoanTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucHocPhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTucHocPhi.Designer.cs">
+      <DependentUpon>GridHocVienLienTucHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTuc_CTT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTuc_CTT.Designer.cs">
+      <DependentUpon>GridHocVienLienTuc_CTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridLopHoc_Diem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridLopHoc_Diem.Designer.cs">
+      <DependentUpon>GridLopHoc_Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridQuanLyDuAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridQuanLyDuAn.Designer.cs">
+      <DependentUpon>GridQuanLyDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownMonHocChinhQuy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownMonHocChinhQuy.Designer.cs">
+      <DependentUpon>DropDownMonHocChinhQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocLienTuc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocLienTuc.Designer.cs">
+      <DependentUpon>DropDownLopHocLienTuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocLienTucKhung.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocLienTucKhung.Designer.cs">
+      <DependentUpon>DropDownLopHocLienTucKhung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocChinhQuy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownLopHocChinhQuy.Designer.cs">
+      <DependentUpon>DropDownLopHocChinhQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\DropDownTrangThaiHocVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DropDownTrangThaiHocVien.Designer.cs">
+      <DependentUpon>DropDownTrangThaiHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienChinhQuy.Designer.cs">
+      <DependentUpon>GridHocVienChinhQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridHocVienLienTuc.Designer.cs">
+      <DependentUpon>GridHocVienLienTuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridLopHoc.Designer.cs">
+      <DependentUpon>GridLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridMonHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridMonHoc.Designer.cs">
+      <DependentUpon>GridMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridNghienCuuKhoaHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\GridNghienCuuKhoaHoc.Designer.cs">
+      <DependentUpon>GridNghienCuuKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Authoration\Authoration.csproj">
+      <Project>{ad000bfc-6c0d-4a52-b45b-b1dfaf866ca8}</Project>
+      <Name>Authoration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarcodeLib\BarcodeLib.csproj">
+      <Project>{f8646414-0c9c-49bb-9da3-3923bf78a398}</Project>
+      <Name>BarcodeLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla.Windows\Csla.Windows.csproj">
+      <Project>{c333cfed-d5a6-47a2-96a6-f13ee2b71ecf}</Project>
+      <Name>Csla.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DanhMuc\DanhMuc.csproj">
+      <Project>{2ecb100d-801b-4778-bf19-b2bde89dee42}</Project>
+      <Name>DanhMuc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExportLib\ExportLib.csproj">
+      <Project>{4d92ca99-506f-4011-a5b7-4e07921a2e92}</Project>
+      <Name>ExportLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.UI\NETLINK.UI.csproj">
+      <Project>{04f12d35-332a-4a7d-a0a8-18cc30712697}</Project>
+      <Name>NETLINK.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SECURITY\SECURITY.csproj">
+      <Project>{8c6cc00a-f5a8-4bff-9391-f65a073408c4}</Project>
+      <Name>SECURITY</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Document\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BackupForm_LT_HocVienLienTuc.resx">
+      <DependentUpon>BackupForm_LT_HocVienLienTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_BangChamCongGV.resx">
+      <DependentUpon>Form_BangChamCongGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_HocVien_Chua_Upload_Images.resx">
+      <DependentUpon>Form_HocVien_Chua_Upload_Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Import_HocVien_Excel.resx">
+      <DependentUpon>Form_Import_HocVien_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormBienLai.resx">
+      <DependentUpon>FormBienLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_LopHoc_Diem.resx">
+      <DependentUpon>Form_LT_LopHoc_Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_LopHocDiaDiemToChuc.resx">
+      <DependentUpon>Form_LT_LopHocDiaDiemToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_LopHocGiangVien.resx">
+      <DependentUpon>Form_LT_LopHocGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_DiemThi.resx">
+      <DependentUpon>Form_CQ_DiemThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_DiemThiTheoLop.resx">
+      <DependentUpon>Form_CQ_DiemThiTheoLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_HocPhiChinhQuy.resx">
+      <DependentUpon>Form_CQ_HocPhiChinhQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_KhenThuongKiLuat.resx">
+      <DependentUpon>Form_CQ_KhenThuongKiLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_LopHoc.resx">
+      <DependentUpon>Form_CQ_LopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_LopHocMonHocGiangVien.resx">
+      <DependentUpon>Form_CQ_LopHocMonHocGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_TamTru.resx">
+      <DependentUpon>Form_CQ_TamTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_DA_DuAn.resx">
+      <DependentUpon>Form_DA_DuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_MonHoc.resx">
+      <DependentUpon>Form_CQ_MonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_ThoiKhoaBieu.resx">
+      <DependentUpon>Form_CQ_ThoiKhoaBieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_TaiLenLichHoc.resx">
+      <DependentUpon>Form_CQ_TaiLenLichHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_NhapDiemThi.resx">
+      <DependentUpon>Form_CQ_NhapDiemThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_CQ_HocVienChinhQuy.resx">
+      <DependentUpon>Form_CQ_HocVienChinhQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_InDiemDanh.resx">
+      <DependentUpon>Form_InDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_NhapDiemThi.resx">
+      <DependentUpon>Form_LT_NhapDiemThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_NhapHocPhi.resx">
+      <DependentUpon>Form_LT_NhapHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_ThongKe.resx">
+      <DependentUpon>Form_LT_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_TraCuuHocPhi.resx">
+      <DependentUpon>Form_LT_TraCuuHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_ThemLopHoc.resx">
+      <DependentUpon>Form_LT_ThemLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_LopHoc.resx">
+      <DependentUpon>Form_LT_LopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_HocVienLienTuc.resx">
+      <DependentUpon>Form_LT_HocVienLienTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_ChuyenGiaoHocVien.resx">
+      <DependentUpon>Form_LT_ChuyenGiaoHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_NCKH_NghienCuuKhoaHoc.resx">
+      <DependentUpon>Form_NCKH_NghienCuuKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_ThongKeHocPhi.resx">
+      <DependentUpon>Form_ThongKeHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_LT_LopHoc_Print.resx">
+      <DependentUpon>Form_LT_LopHoc_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FromNhapSoTien.resx">
+      <DependentUpon>FromNhapSoTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Add_LichGiang.resx">
+      <DependentUpon>Form_Add_LichGiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\BackupGridHocVienLienTucDiem.resx">
+      <DependentUpon>BackupGridHocVienLienTucDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucThongKe.resx">
+      <DependentUpon>GridHocVienLienTucThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhBSNT.resx">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhBSNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKII.resx">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhCKII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienChinhQuy_KetQuaTuyenSinhCKI.resx">
+      <DependentUpon>GridHocVienChinhQuy_KetQuaTuyenSinhCKI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridKhungLopHoc.resx">
+      <DependentUpon>GridKhungLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucDaInThe.resx">
+      <DependentUpon>GridHocVienLienTucDaInThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucChuaInThe.resx">
+      <DependentUpon>GridHocVienLienTucChuaInThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucChuaInChungChi.resx">
+      <DependentUpon>GridHocVienLienTucChuaInChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucDaInChungChi.resx">
+      <DependentUpon>GridHocVienLienTucDaInChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyMonHoc.resx">
+      <DependentUpon>GridChinhQuyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyMonHoc.vi.resx">
+      <DependentUpon>GridChinhQuyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyNhapDiemHocVien.resx">
+      <DependentUpon>GridChinhQuyNhapDiemHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyNhapDiemHocVien.vi.resx">
+      <DependentUpon>GridChinhQuyNhapDiemHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyNhapDiemLopHoc.resx">
+      <DependentUpon>GridChinhQuyNhapDiemLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyNhapDiemLopHoc.vi.resx">
+      <DependentUpon>GridChinhQuyNhapDiemLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyHocPhi.resx">
+      <DependentUpon>GridChinhQuyHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyHocPhi.vi.resx">
+      <DependentUpon>GridChinhQuyHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyLopHoc.resx">
+      <DependentUpon>GridChinhQuyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridChinhQuyLopHoc.vi.resx">
+      <DependentUpon>GridChinhQuyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucInHenChungNhan.resx">
+      <DependentUpon>GridHocVienLienTucInHenChungNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucDiem.resx">
+      <DependentUpon>GridHocVienLienTucDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucHocPhiHoanTien.resx">
+      <DependentUpon>GridHocVienLienTucHocPhiHoanTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTucHocPhi.resx">
+      <DependentUpon>GridHocVienLienTucHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTuc_CTT.resx">
+      <DependentUpon>GridHocVienLienTuc_CTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridLopHoc_Diem.resx">
+      <DependentUpon>GridLopHoc_Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridQuanLyDuAn.resx">
+      <DependentUpon>GridQuanLyDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\DropDownMonHocChinhQuy.resx">
+      <DependentUpon>DropDownMonHocChinhQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\DropDownLopHocLienTuc.resx">
+      <DependentUpon>DropDownLopHocLienTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\DropDownLopHocLienTucKhung.resx">
+      <DependentUpon>DropDownLopHocLienTucKhung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\DropDownLopHocChinhQuy.resx">
+      <DependentUpon>DropDownLopHocChinhQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienChinhQuy.resx">
+      <DependentUpon>GridHocVienChinhQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridHocVienLienTuc.resx">
+      <DependentUpon>GridHocVienLienTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridLopHoc.resx">
+      <DependentUpon>GridLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridMonHoc.resx">
+      <DependentUpon>GridMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\GridNghienCuuKhoaHoc.resx">
+      <DependentUpon>GridNghienCuuKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DanhMuc.LIB.DIC_BenhVien_Coll.datasource" />
+    <None Include="DanhMuc.LIB.DIC_CanBo_Coll.datasource" />
+    <None Include="DanhMuc.LIB.DIC_ChuyenKhoa_Coll.datasource" />
+    <None Include="DanhMuc.LIB.DIC_GiangVien_Coll.datasource" />
+    <None Include="DanhMuc.LIB.DIC_HocVi_Coll.datasource" />
+    <None Include="DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="ModuleDaoTao.LIB.BienLaiColl.datasource" />
+    <None Include="ModuleDaoTao.LIB.BienLaiInfo.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_DiemThi.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_DiemThi_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_DiemThi_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_GiangVienMonHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_HocVien.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_HocVienDetail.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_HocVienSearch.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_HocVien_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_HocVien_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_KhenThuongKyLuat.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_KhenThuongKyLuat_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_KhenThuongKyLuat_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_LopHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_MonHoc.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_MonHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_MonHoc_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_TamTru.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_TamTru_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_TamTru_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_ThoiKhoaBieu.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_ThoiKhoaBieu_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_ChinhQuy_ThoiKhoaBieu_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_DuAn.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_DuAn_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_DuAn_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_Group_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LichGiangTheoLop.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LichGiangTheoLop_CT_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_GiangVien_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_HocVien.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_Lientuc_HocVienSearch.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_HocVien_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_HocVien_Import_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_HocVien_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_KhungLopHoc.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_KhungLopHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_KhungLopHoc_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_DiaDiemToChuc.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_DiaDiemToChuc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_DiaDiemToChuc_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_GiangVien_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_LienTuc_LopHoc_Info.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_NghienCuuKhoaHoc.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_NghienCuuKhoaHoc_Coll.datasource" />
+    <None Include="ModuleDaoTao.LIB.DT_NghienCuuKhoaHoc_Info.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModuleHanhChinh.LIB.SeachHocVien_Coll.datasource" />
+    <None Include="ModuleHanhChinh.LIB.SeachHocVien_Info.datasource" />
+    <None Include="Resources\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

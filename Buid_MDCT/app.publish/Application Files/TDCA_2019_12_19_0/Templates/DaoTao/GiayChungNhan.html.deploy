@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title></title>
+    <meta name="generator" content="BCL easyConverter SDK 3.0.60">
+    <style type="text/css">
+		body{padding:0;margin:0; height:100%;width:100%;text-align:left;}
+        .MainBody {
+            width:296.9mm;
+			height:210mm;
+          
+        }
+        .FullSize {
+             width:100%;
+        }
+        .PandingLeft {
+            width:100px;
+        }
+        .FontArial { 
+            font-family:Arial;
+            text-align:left;
+            font-size:13px;
+           
+        }
+        .FontCambiria {
+            font-family:Cambria;
+            font-size:18px;
+             font-weight:bold;
+            font-style:italic;
+        }
+        .auto-style3 {
+            width: 305px;
+        }
+		
+        .auto-style5 {
+            width: 150px;
+        }
+		
+        .auto-style7 {
+            width: 99px;
+        }
+        .auto-style8 {
+            width: 351px;
+        }
+		
+        .auto-style10 {
+            width: 320px;
+            text-align:center;
+            font-style:italic;
+        }
+
+        .auto-style13 {
+            width: 320px;
+             text-align:center;
+             font-weight:bold;
+        }
+
+		
+        .auto-style15 {
+            width: 667px;
+            font-weight:bold;
+        }
+        .textHeight {
+            height:15px;
+        }
+		
+        .auto-style16 {
+            width: 139px;
+        }
+        .auto-style17 {
+            width: 153px;
+        }
+        .auto-style18 {
+            width: 201px;
+        }
+		
+        .auto-style19 {
+            width: 106px;
+        }
+        .auto-style20 {
+            width: 115px;
+        }
+        .auto-style21 {
+            width: 86px;
+        }
+		
+    </style>
+</head>
+<body>    
+
+         <table class="MainBody" >
+        <tr style="height:280px">
+            <td></td>
+        </tr>
+        <tr class="textHeight">
+            <td>
+                <table class="FullSize">
+                    <tr><td class="PandingLeft"></td><td class="auto-style16" >Học viên / Participant:</td><td class="FontCambiria auto-style3">$Name</td><td class="auto-style17">Ngày sinh / Date of birth:</td><td class="FontCambiria ">$DateOfBirth</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="textHeight">
+            <td><table class="FullSize">
+                <tr><td class="PandingLeft"></td><td class="FontArial auto-style5">Trình độ / Qualification:</td><td class="FontCambiria">$Qualification</td>
+                    </tr></table>
+
+            </td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="auto-style18">Đơn vị công tác / Organization:</td><td class="FontCambiria">$Organization</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontArial">Đã hoàn thành chương trình đào tạo về / Has completed the continuing medical course on</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontCambiria" style="text-align:center">$Content</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="auto-style19">Số tiết / Hours:</td><td class="FontCambiria">$Duration</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="auto-style20">Từ ngày / From:</td><td class="FontCambiria auto-style8">$Start</td><td class="FontArial auto-style7">Đến ngày / To:</td><td class="FontCambiria">$End</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td ></td><td class="FontArial auto-style10">$Date</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td ></td><td class="FontArial auto-style13">GIÁM ĐỐC BỆNH VIỆN / DIRECTOR</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr style="height:150px;">
+            <td></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="auto-style21">Số / No:....../</td><td class="FontArial auto-style15">$Code</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr>
+            <td></td>
+        </tr>
+    </table>
+    
+       
+ 
+ 
+
+
+</body>
+
+</html>

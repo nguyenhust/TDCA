@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F5080F9-100C-42A0-BE5F-53ACFDC4E4DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dataMigration</RootNamespace>
+    <AssemblyName>dataMigration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2012.2.608.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldSoft\CTAC_TUYEN_CTIET.cs" />
+    <Compile Include="OldSoft\CTAC_TUYEN_CTIET_COLL.cs" />
+    <Compile Include="OldSoft\CTAC_TUYEN_CTIET_INFO.cs" />
+    <Compile Include="OldSoft\DM_CHUYENNGANH.cs" />
+    <Compile Include="OldSoft\DM_CHUYENNGANH_COLL.cs" />
+    <Compile Include="OldSoft\DM_CHUYENNGANH_INFO.cs" />
+    <Compile Include="OldSoft\DM_LOPHOC.cs" />
+    <Compile Include="OldSoft\DM_LOPHOC_COLL.cs" />
+    <Compile Include="OldSoft\DM_LOPHOC_INFO.cs" />
+    <Compile Include="OldSoft\DM_NGUONKINHPHI.cs" />
+    <Compile Include="OldSoft\DM_NGUONKINHPHI_COLL.cs" />
+    <Compile Include="OldSoft\DM_NGUONKINHPHI_INFO.cs" />
+    <Compile Include="OldSoft\DM_TPHO.cs" />
+    <Compile Include="OldSoft\DM_TPHO_COLL.cs" />
+    <Compile Include="OldSoft\DM_TPHO_INFO.cs" />
+    <Compile Include="OldSoft\DM_TRINHDO.cs" />
+    <Compile Include="OldSoft\DM_TRINHDO_COLL.cs" />
+    <Compile Include="OldSoft\DM_TRINHDO_INFO.cs" />
+    <Compile Include="OldSoft\HOC_VIEN_TT.cs" />
+    <Compile Include="OldSoft\HOC_VIEN_TT_COLL.cs" />
+    <Compile Include="OldSoft\HOC_VIEN_TT_INFO.cs" />
+    <Compile Include="OldSoft\LOP_HOC.cs" />
+    <Compile Include="OldSoft\LOP_HOC_Coll.cs" />
+    <Compile Include="OldSoft\LOP_HOC_Info.cs" />
+    <Compile Include="OldSoft\MA_BVIEN.cs" />
+    <Compile Include="OldSoft\MA_BVIEN_COLL.cs" />
+    <Compile Include="OldSoft\MA_BVIEN_INFO.cs" />
+    <Compile Include="OldSoft\MA_TPHO.cs" />
+    <Compile Include="OldSoft\MA_TPHO_COLL.cs" />
+    <Compile Include="OldSoft\MA_TPHO_INFO.cs" />
+    <Compile Include="OldSoft\NHAN_VIEN.cs" />
+    <Compile Include="OldSoft\NHAN_VIEN_COLL.cs" />
+    <Compile Include="OldSoft\NHAN_VIEN_INFO.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewSoft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csla.Windows\Csla.Windows.csproj">
+      <Project>{c333cfed-d5a6-47a2-96a6-f13ee2b71ecf}</Project>
+      <Name>Csla.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9da591ed-c570-47ac-8e5d-35b039e07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DanhMuc\DanhMuc.csproj">
+      <Project>{2ecb100d-801b-4778-bf19-b2bde89dee42}</Project>
+      <Name>DanhMuc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleChiDaoTuyen\ModuleChiDaoTuyen.csproj">
+      <Project>{95bd3f89-0cdf-47b8-8d0a-26732fc26f24}</Project>
+      <Name>ModuleChiDaoTuyen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleDaoTao\ModuleDaoTao.csproj">
+      <Project>{a3e7d5ab-f2c6-470d-bcb2-359f492ecd7b}</Project>
+      <Name>ModuleDaoTao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModuleHanhChinh\ModuleHanhChinh.csproj">
+      <Project>{6eb18d41-739e-42e6-80d5-d268a0eeeba4}</Project>
+      <Name>ModuleHanhChinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TruyenThong\TruyenThong.csproj">
+      <Project>{99c51fb4-f39b-49a3-902a-94a32486f1b9}</Project>
+      <Name>TruyenThong</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

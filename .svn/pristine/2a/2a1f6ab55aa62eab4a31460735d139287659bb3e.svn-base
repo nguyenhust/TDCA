@@ -1,0 +1,177 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<TITLE></TITLE>
+<META name="generator" content="BCL easyConverter SDK 3.0.60">
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 16px 0px 829px 47px;padding: 0px;border: none;width: 869px;}
+#page_1 #id_1 {border:none;margin: 0px 0px 0px 15px;padding: 0px;border:none;width: 754px;overflow: hidden;}
+#page_1 #id_1 #id_1_1 {float:left;border:none;margin: 7px 0px 0px 0px;padding: 0px;border:none;width: 270px;overflow: hidden;}
+#page_1 #id_1 #id_1_2 {float:left;border:none;margin: 0px 0px 0px 0px;padding: 0px;border:none;width: 484px;overflow: hidden;}
+#page_1 #id_2 {border:none;margin: 14px 0px 0px 0px;padding: 0px;border:none;width: 722px;overflow: hidden;}
+
+#page_1 #dimg1 {position:absolute;top:67px;left:73px;z-index:-1;width:108px;height:2px;font-size: 1px;line-height:nHeight;}
+#page_1 #dimg1 #img1 {width:108px;height:2px;}
+
+
+
+
+    .ft0 {
+        font: 17px 'Times New Roman';
+        line-height: 19px;
+    }
+    .ft1 {
+        font: 13px 'Times New Roman';
+        line-height: 16px;
+    }
+    .ft2 {
+        font: 23px 'Times New Roman';
+        line-height: 26px;
+    }
+    .ft3 {
+        font: 21px 'Times New Roman';
+        line-height: 24px;
+    }
+    .ft4 {
+        font: 15px 'Times New Roman';
+        line-height: 17px;
+    }
+    .ft5 {
+        font: 1px 'Times New Roman';
+        line-height: 1px;
+    }
+    .ft6 {
+        font: 1px 'Times New Roman';
+        line-height: 11px;
+    }
+
+.p0{text-align: left;padding-left: 35px;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;margin-top: 11px;margin-bottom: 0px;}
+.p2{text-align: left;padding-left: 104px;margin-top: 7px;margin-bottom: 0px;}
+.p3{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+.p4{text-align: left;padding-left: 60px;margin-top: 10px;margin-bottom: 0px;}
+.p5{text-align: left;padding-left: 11px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p6{text-align: left;padding-left: 12px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p7{text-align: left;padding-left: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p8{text-align: left;padding-left: 127px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p9{text-align: center;padding-right: 68px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p10{text-align: left;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p11{text-align: left;padding-left: 57px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p12{text-align: center;padding-right: 71px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p13{text-align: left;padding-left: 102px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+
+.td0{border-left: #000000 1px solid;border-right: #000000 1px solid;border-top: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 48px;vertical-align: bottom;}
+    .td20 {
+        border-left: #000000 1px solid;
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 48px;
+    }
+.td1{border-right: #000000 1px solid;border-top: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 185px;vertical-align: bottom;}
+    .td21 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 185px;
+    }
+.td2{border-right: #000000 1px solid;border-top: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 77px;vertical-align: bottom;}
+    .td22 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 77px;
+    }
+.td3{border-right: #000000 1px solid;border-top: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 89px;vertical-align: bottom;}
+    .td23 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 89px;
+    }
+.td4{border-right: #000000 1px solid;border-top: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 317px;vertical-align: bottom;}
+    .td24 {
+        border-right: #000000 1px solid;
+        border-bottom: #000000 1px solid;
+        padding: 0px;
+        margin: 0px;
+        width: 317px;
+    }
+.td5{padding: 0px;margin: 0px;width: 236px;vertical-align: bottom;}
+.td6{padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td7{padding: 0px;margin: 0px;width: 90px;vertical-align: bottom;}
+.td8{padding: 0px;margin: 0px;width: 318px;vertical-align: bottom;}
+.td9{padding: 0px;margin: 0px;width: 50px;vertical-align: bottom;}
+.td10{padding: 0px;margin: 0px;width: 186px;vertical-align: bottom;}
+.td11{padding: 0px;margin: 0px;width: 168px;vertical-align: bottom;}
+
+.tr0{height: 34px;}
+.tr1{height: 28px;}
+.tr2{height: 39px;}
+.tr3{height: 11px;}
+.tr4{height: 43px;}
+    .tr10 {
+        height: 24px;
+    }
+    .t0 {
+        width: 722px;
+        font: 13px 'Times New Roman';
+    }
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+<DIV id="id_1">
+<DIV id="id_1_1">
+<P class="p0 ft0">BỆNH VIỆN BẠCH MAI</P>
+<P class="p1 ft1">TRUNG TÂM ĐÀO TẠO & CHỈ ĐẠO TUYẾN</P>
+<P class="p2 ft0">***</P>
+</DIV>
+<DIV id="id_1_2">
+<P class="p3 ft2">PHIẾU DỰ TRÙ VĂN PHÒNG PHẨM</P>
+<P class="p4 ft3">$ThangDuTru</P>
+</DIV>
+</DIV>
+<DIV id="id_2">
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD class="tr0 td0"><P class="p5 ft4">STT</P></TD>
+	<TD class="tr0 td1"><P class="p5 ft4">DANH MỤC HÀNG HÓA</P></TD>
+	<TD class="tr0 td2"><P class="p6 ft4">ĐƠN VỊ</P></TD>
+	<TD class="tr0 td3"><P class="p7 ft4">SỐ LƯỢNG</P></TD>
+	<TD class="tr0 td4"><P class="p8 ft4">GHI CHÚ</P></TD>
+</TR>
+    $DataTable
+<TR>
+	<TD colspan=2 class="tr1 td5"><P class="p9 ft1">Tổng cộng : $Tong khoản</P></TD>
+	<TD class="tr1 td6"><P class="p10 ft5">&nbsp;</P></TD>
+	<TD class="tr1 td7"><P class="p10 ft5">&nbsp;</P></TD>
+	<TD rowspan=2 class="tr2 td8"><P class="p11 ft1">Hà Nội, $NgayLap</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td9"><P class="p10 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td10"><P class="p10 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td6"><P class="p10 ft6">&nbsp;</P></TD>
+	<TD class="tr3 td7"><P class="p10 ft6">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD colspan=2 class="tr4 td5"><P class="p12 ft1">NGƯỜI LẬP PHIẾU</P></TD>
+	<TD colspan=2 class="tr4 td11"><P class="p5 ft1">LÃNH ĐẠO TT ĐT & CDT</P></TD>
+	<TD class="tr4 td8"><P class="p13 ft1">TRƯỞNG PHÒNG HCQT</P></TD>
+</TR>
+</TABLE>
+</DIV>
+</DIV>
+</BODY>
+</HTML>

@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D92CA99-506F-4011-A5B7-4E07921A2E92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExportLib</RootNamespace>
+    <AssemblyName>ExportLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataSet\ExportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ChiDaoTuyen\B013_BaoCaoKetQuaDaoTaoHoiChan.cs" />
+    <Compile Include="Entities\DaoTao\B011_BaoCaoSoLuongHocVienTheoTrinhDo.cs" />
+    <Compile Include="Entities\DaoTao\B012_BaoCaoThuTienHocVienKemCap.cs" />
+    <Compile Include="Entities\DaoTao\BangTheoDoiChiTieuThucHanh.cs" />
+    <Compile Include="Entities\DaoTao\BangTongHopKetQuaHoanThanhChiTieuThucHanh.cs" />
+    <Compile Include="Entities\DaoTao\ChungChi.cs" />
+    <Compile Include="Entities\DaoTao\B014_BaoCaoTongKetKhoaDaoTao.cs" />
+    <Compile Include="Entities\DaoTao\B015_BaoCaoThongKeHocVienTheoLop.cs" />
+    <Compile Include="Entities\DaoTao\D004_DanhSachThuTienTaiTDC.cs" />
+    <Compile Include="Entities\DaoTao\D003_DanhSachLopHoc2.cs" />
+    <Compile Include="Entities\DaoTao\D002_DanhSachHocVienNhanGiayChungNhan.cs" />
+    <Compile Include="Entities\DaoTao\GiayChungNhan.cs" />
+    <Compile Include="Entities\DaoTao\HienTrangSuDungThietBiTienLamSang.cs" />
+    <Compile Include="Entities\DaoTao\L001_LichLopHocLichGiangLyThuyet.cs" />
+    <Compile Include="Entities\DaoTao\D001_DanhSachKhoaHoc.cs" />
+    <Compile Include="Entities\DaoTao\B001_BangDiemDanhTheoLop.cs" />
+    <Compile Include="Entities\DaoTao\G001_GiayHenTraChungChiHocVien.cs" />
+    <Compile Include="Entities\DaoTao\G002_GiayHenTraTheHocVien.cs" />
+    <Compile Include="Entities\DaoTao\G004_GiayDeNghiTiepNhanHocVien.cs" />
+    <Compile Include="Entities\DaoTao\G003_GiayDeNghiThuTienHocPhi.cs" />
+    <Compile Include="Entities\DaoTao\P_PhieuThuLT.cs" />
+    <Compile Include="Entities\DaoTao\Person.cs" />
+    <Compile Include="Entities\DaoTao\TheHocVien.cs" />
+    <Compile Include="Entities\DaoTao\TheHocVienLienTuc.cs" />
+    <Compile Include="Entities\HanhChinh\B100_BaoCaoChung.cs" />
+    <Compile Include="Entities\HanhChinh\BaoCaoXinXe.cs" />
+    <Compile Include="Entities\HanhChinh\P001_PhieuMuonThietBi.cs" />
+    <Compile Include="Entities\HanhChinh\P005_PhieuDangKiGiangDuongPhongHoc.cs" />
+    <Compile Include="Entities\HanhChinh\PhieuXinXe.cs" />
+    <Compile Include="Entities\TruyenThong\B012_BaoCaoQuanLyAnhCungCap.cs" />
+    <Compile Include="Entities\TruyenThong\B011_BaiVietTruyenThong.cs" />
+    <Compile Include="Entities\HanhChinh\B010_BaoCaoTrangThietBi.cs" />
+    <Compile Include="Entities\HanhChinh\B006_BaoCaoDuTruVanPhongPhamTheoTo.cs" />
+    <Compile Include="Entities\HanhChinh\B007_BaoCaoDuTruVanPhongPham.cs" />
+    <Compile Include="Entities\HanhChinh\B005_BaoCaoDangKiGiangDuongPhongHoc.cs" />
+    <Compile Include="Entities\HanhChinh\B004_BaoCaoCongVanDi.cs" />
+    <Compile Include="Entities\HanhChinh\B003_BaoCaoCongVanDen.cs" />
+    <Compile Include="Entities\HanhChinh\B002_BaoCaoChamCong.cs" />
+    <Compile Include="Entities\HanhChinh\B009_ThietBiTienLamSang.cs" />
+    <Compile Include="Entities\HanhChinh\B008_BaoCaoTonKhoThietBiLamSang.cs" />
+    <Compile Include="ExportDaoTao.cs" />
+    <Compile Include="ExportChiDaoTuyen.cs" />
+    <Compile Include="ExportHanhChinh.cs" />
+    <Compile Include="ExportTruyenThong.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\ChiDaoTuyen\B013_BaoCaoKetQuaDaoTaoHoiChan.cs">
+      <DependentUpon>B013_BaoCaoKetQuaDaoTaoHoiChan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\B001_BangDiemDanhTheoLop.cs">
+      <DependentUpon>B001_BangDiemDanhTheoLop.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\B011_BaoCaoSoLuongHocVienTheoTrinhDo.cs">
+      <DependentUpon>B011_BaoCaoSoLuongHocVienTheoTrinhDo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\B012_BaoCaoThuTienHocVienKemCap.cs">
+      <DependentUpon>B012_BaoCaoThuTienHocVienKemCap.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\B014_BaoCaoTongKetKhoaDaoTao.cs">
+      <DependentUpon>B014_BaoCaoTongKetKhoaDaoTao.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\B015_BaoCaoThongKeHocVienTheoLop.cs">
+      <DependentUpon>B015_BaoCaoThongKeHocVienTheoLop.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\D004_DanhSachThuTienTaiTDC.cs">
+      <DependentUpon>D004_DanhSachThuTienTaiTDC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\D003_DanhSachLopHoc2.cs">
+      <DependentUpon>D003_DanhSachLopHoc2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\D002_DanhSachHocVienNhanGiayChungNhan.cs">
+      <DependentUpon>D002_DanhSachHocVienNhanGiayChungNhan.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\D001_DanhSachKhoaHoc.cs">
+      <DependentUpon>D001_DanhSachKhoaHoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\G002_GiayHenTraTheHocVien.cs">
+      <DependentUpon>G002_GiayHenTraTheHocVien.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\G001_GiayHenTraChungChiHocVien.cs">
+      <DependentUpon>G001_GiayHenTraChungChiHocVien.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\G004_GiayDeNghiTiepNhanHocVien.cs">
+      <DependentUpon>G004_GiayDeNghiTiepNhanHocVien.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\DaoTao\P003_PhieuThuLT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P003_PhieuThuLT.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B003_BaoCaoCongVanDen.cs">
+      <DependentUpon>B003_BaoCaoCongVanDen.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B004_BaoCaoCongVanDi.cs">
+      <DependentUpon>B004_BaoCaoCongVanDi.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B005_BaoCaoDangKiGiangDuongPhongHoc.cs">
+      <DependentUpon>B005_BaoCaoDangKiGiangDuongPhongHoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B009_BaoCaoTonKhoThietBiTienLamSang.cs">
+      <DependentUpon>B009_BaoCaoTonKhoThietBiTienLamSang.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B010_BaoCaoTrangThietBi.cs">
+      <DependentUpon>B010_BaoCaoTrangThietBi.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\B006_BaoCaoDuTruVanPhongPhamTheoTo.cs">
+      <DependentUpon>B006_BaoCaoDuTruVanPhongPhamTheoTo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\P001_PhieuMuonThietBi.cs">
+      <DependentUpon>P001_PhieuMuonThietBi.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\HanhChinh\P005_PhieuDangKiGiangDuongPhongHoc.cs">
+      <DependentUpon>P005_PhieuDangKiGiangDuongPhongHoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\TruyenThong\B012_BaoCaoQuanLyAnhCungCap.cs">
+      <DependentUpon>B012_BaoCaoQuanLyAnhCungCap.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="Templates\TruyenThong\B011_BaiVietTruyenThong.cs">
+      <DependentUpon>B011_BaiVietTruyenThong.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="thehocvien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>thehocvien.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Guideline.txt" />
+    <Content Include="Templates\ChiDaoTuyen\B013_BaoCaoKetQuaDaoTaoHoiChan.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\anhthehocvien.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\anhthehocvien_lientuc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\GiayChungChi.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\GiayChungNhan.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\GiayHenTraThe.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\MauChungChi2014.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\MauChungNhan2014.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\TheHocVien.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\TheHocVienLienTuc.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\B001_BangDiemDanhTheoLop.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\D001_DanhSachKhoaHoc.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\L001_LichLopHocLichGiang.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\P004_PhieuThuLT.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B002_BaoCaoChamCong.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B007_BaoCaoDuTruVanPhongPham.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B008_BaoCaoTonKhoThietBiLamSang.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B100_BaoCaoChung.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B101_PhieuXinXe.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B102_BaoCaoLichLamViec.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\HanhChinh\B103_HVduoccapchungchitheolop.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\TruyenThong\B011_BaiVietTruyenThong.html" />
+    <Content Include="Templates\TruyenThong\B012_BaoCaoQuanLyAnhCungCap.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\DaoTao\G002_GiayHenTraTheHocVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G002_GiayHenTraTheHocVien.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\G001_GiayHenTraChungChiHocVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G001_GiayHenTraChungChiHocVien.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\G004_GiayDeNghiTiepNhanHocVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G004_GiayDeNghiTiepNhanHocVien.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\G003_GiayDeNghiThuTienHocPhi.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\DaoTao\P003_PhieuThuLT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>P003_PhieuThuLT.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Templates\ChiDaoTuyen\B013_BaoCaoKetQuaDaoTaoHoiChan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B013_BaoCaoKetQuaDaoTaoHoiChan.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\B001_BangDiemDanhTheoLop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B001_BangDiemDanhTheoLop.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\B011_BaoCaoSoLuongHocVienTheoTrinhDo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B011_BaoCaoSoLuongHocVienTheoTrinhDo.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\B012_BaoCaoThuTienHocVienKemCap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B012_BaoCaoThuTienHocVienKemCap.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\B014_BaoCaoTongKetKhoaDaoTao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B014_BaoCaoTongKetKhoaDaoTao.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\B015_BaoCaoThongKeHocVienTheoLop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B015_BaoCaoThongKeHocVienTheoLop.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\D004_DanhSachThuTienTaiTDC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>D004_DanhSachThuTienTaiTDC.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\D003_DanhSachLopHoc2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>D003_DanhSachLopHoc2.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\D002_DanhSachHocVienNhanGiayChungNhan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>D002_DanhSachHocVienNhanGiayChungNhan.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DaoTao\D001_DanhSachKhoaHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>D001_DanhSachKhoaHoc.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B003_BaoCaoCongVanDen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B003_BaoCaoCongVanDen.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B004_BaoCaoCongVanDi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B004_BaoCaoCongVanDi.cs</LastGenOutput>
+      <LastGenOutput>G002_GiayHenTraTheHocVien.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B005_BaoCaoDangKiGiangDuongPhongHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B005_BaoCaoDangKiGiangDuongPhongHoc.cs</LastGenOutput>
+      <LastGenOutput>G001_GiayHenTraChungChiHocVien.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B009_BaoCaoTonKhoThietBiTienLamSang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G003_GiayDeNghiThuTienHocPhi.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>B009_BaoCaoTonKhoThietBiTienLamSang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B010_BaoCaoTrangThietBi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>P003_PhieuThuLT.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>B010_BaoCaoTrangThietBi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\B006_BaoCaoDuTruVanPhongPhamTheoTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B006_BaoCaoDuTruVanPhongPhamTheoTo.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\HanhChinh\P001_PhieuMuonThietBi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>P001_PhieuMuonThietBi.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Templates\HanhChinh\P005_PhieuDangKiGiangDuongPhongHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>P005_PhieuDangKiGiangDuongPhongHoc.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Templates\TruyenThong\B012_BaoCaoQuanLyAnhCungCap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B012_BaoCaoQuanLyAnhCungCap.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\TruyenThong\B011_BaiVietTruyenThong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>B011_BaiVietTruyenThong.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thehocvien.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>thehocvien.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet\ExportDataSet.xsc">
+      <DependentUpon>ExportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\ExportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\ExportDataSet.xss">
+      <DependentUpon>ExportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Templates\DaoTao\3OF9_NEW.TTF" />
+    <None Include="Templates\DaoTao\BarcodeFont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DaoTao\fre3of9x.ttf" />
+    <None Include="Templates\DaoTao\free3of9.ttf" />
+    <None Include="Templates\DaoTao\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NETLINK.LIB\NETLINK.LIB.csproj">
+      <Project>{d48fabcc-a19a-4023-94e1-c32b28bd896e}</Project>
+      <Name>NETLINK.LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

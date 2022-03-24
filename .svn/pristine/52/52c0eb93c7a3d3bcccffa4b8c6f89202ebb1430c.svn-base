@@ -1,0 +1,225 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<TITLE></TITLE>
+<META name="generator" content="BCL easyConverter SDK 3.0.60">
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 0px 0px 109px 47px;padding: 0px;border: none;width: 956px;}
+
+.ft0{font: 16px 'Arial';line-height: 18px;}
+.ft1{font: 21px 'Arial';line-height: 24px;}
+.ft2{font: 1px 'Arial';line-height: 1px;}
+.ft3{font: 1px 'Arial';line-height: 9px;}
+.ft4{font: 15px 'Arial';line-height: 17px;}
+.ft5{font: 1px 'Arial';line-height: 10px;}
+.ft6{font: 13px 'Arial';line-height: 16px;}
+.ft7{font: 1px 'Arial';line-height: 11px;}
+.ft8{font: 1px 'Arial';line-height: 12px;}
+.ft9{font: 12px 'Arial';line-height: 15px;}
+.ft10{font: 1px 'Arial';line-height: 6px;}
+
+.p0{text-align: center;padding-right: 31px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p1{text-align: center;padding-left: 83px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p2{text-align: left;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p3{text-align: center;padding-right: 30px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p4{text-align: center;padding-right: 5px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p5{text-align: center;padding-right: 68px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p6{text-align: left;padding-left: 181px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p7{text-align: left;padding-left: 5px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p8{text-align: left;padding-left: 29px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p9{text-align: left;padding-left: 56px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p10{text-align: center;padding-right: 4px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p11{text-align: center;padding-right: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p12{text-align: left;padding-left: 15px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p13{text-align: left;padding-left: 68px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p14{text-align: left;padding-left: 41px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p15{text-align: center;padding-right: 2px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p16{text-align: left;padding-left: 3px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p17{text-align: right;padding-right: 9px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p18{text-align: right;padding-right: 18px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p19{text-align: center;padding-right: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p20{text-align: left;padding-left: 6px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p21{text-align: right;padding-right: 21px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p22{text-align: center;padding-left: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p23{text-align: center;padding-right: 6px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p24{text-align: left;padding-left: 42px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p25{text-align: left;padding-left: 14px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p26{text-align: left;padding-left: 40px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p27{text-align: left;padding-left: 2px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p28{text-align: right;padding-right: 42px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p29{text-align: left;padding-left: 43px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p30{text-align: left;padding-left: 10px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p31{text-align: center;padding-right: 71px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p32{text-align: left;padding-left: 7px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p33{text-align: right;padding-right: 14px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p34{text-align: right;padding-right: 10px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p35{text-align: right;padding-right: 25px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p36{text-align: right;padding-right: 26px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p37{text-align: left;padding-left: 1px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+.p38{text-align: right;padding-right: 16px;margin-top: 0px;margin-bottom: 0px;white-space: nowrap;}
+
+.td0{padding: 0px;margin: 0px;width: 230px;vertical-align: bottom;}
+.td1{padding: 0px;margin: 0px;width: 578px;vertical-align: bottom;}
+.td2{padding: 0px;margin: 0px;width: 47px;vertical-align: bottom;}
+.td3{padding: 0px;margin: 0px;width: 101px;vertical-align: bottom;}
+.td4{padding: 0px;margin: 0px;width: 218px;vertical-align: bottom;}
+.td5{padding: 0px;margin: 0px;width: 233px;vertical-align: bottom;}
+.td6{padding: 0px;margin: 0px;width: 127px;vertical-align: bottom;}
+.td7{padding: 0px;margin: 0px;width: 39px;vertical-align: bottom;}
+.td8{padding: 0px;margin: 0px;width: 191px;vertical-align: bottom;}
+.td9{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 39px;vertical-align: bottom;}
+.td10{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 191px;vertical-align: bottom;}
+.td11{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 218px;vertical-align: bottom;}
+.td12{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 155px;vertical-align: bottom;}
+.td13{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td14{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 127px;vertical-align: bottom;}
+.td15{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 47px;vertical-align: bottom;}
+.td16{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 101px;vertical-align: bottom;}
+.td17{border-left: #000000 1px solid;border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 37px;vertical-align: bottom;}
+.td18{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 190px;vertical-align: bottom;}
+.td19{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 217px;vertical-align: bottom;}
+.td20{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 154px;vertical-align: bottom;}
+.td21{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 77px;vertical-align: bottom;}
+.td22{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 126px;vertical-align: bottom;}
+.td23{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 46px;vertical-align: bottom;}
+.td24{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 100px;vertical-align: bottom;}
+.td25{border-left: #000000 1px solid;border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 37px;vertical-align: bottom;}
+.td26{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 190px;vertical-align: bottom;}
+.td27{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 217px;vertical-align: bottom;}
+.td28{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 154px;vertical-align: bottom;}
+.td29{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 77px;vertical-align: bottom;}
+.td30{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 126px;vertical-align: bottom;}
+.td31{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 46px;vertical-align: bottom;}
+.td32{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 100px;vertical-align: bottom;}
+.td33{padding: 0px;margin: 0px;width: 234px;vertical-align: bottom;}
+.td34{padding: 0px;margin: 0px;width: 126px;vertical-align: bottom;}
+.td35{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 79px;vertical-align: bottom;}
+.td36{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 126px;vertical-align: bottom;}
+.td37{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td38{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 125px;vertical-align: bottom;}
+.td39{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 78px;vertical-align: bottom;}
+.td40{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 125px;vertical-align: bottom;}
+.td41{padding: 0px;margin: 0px;width: 181px;vertical-align: bottom;}
+.td42{padding: 0px;margin: 0px;width: 36px;vertical-align: bottom;}
+.td43{padding: 0px;margin: 0px;width: 235px;vertical-align: bottom;}
+.td44{padding: 0px;margin: 0px;width: 397px;vertical-align: bottom;}
+.td45{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 181px;vertical-align: bottom;}
+.td46{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 36px;vertical-align: bottom;}
+.td47{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 156px;vertical-align: bottom;}
+.td48{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 35px;vertical-align: bottom;}
+.td49{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 155px;vertical-align: bottom;}
+.td50{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 35px;vertical-align: bottom;}
+.td51{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 155px;vertical-align: bottom;}
+.td52{padding: 0px;margin: 0px;width: 154px;vertical-align: bottom;}
+.td53{padding: 0px;margin: 0px;width: 424px;vertical-align: bottom;}
+.td54{padding: 0px;margin: 0px;width: 27px;vertical-align: bottom;}
+.td55{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 154px;vertical-align: bottom;}
+.td56{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 27px;vertical-align: bottom;}
+.td57{border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 77px;vertical-align: bottom;}
+.td58{border-right: #000000 1px solid;padding: 0px;margin: 0px;width: 76px;vertical-align: bottom;}
+.td59{border-right: #000000 1px solid;border-bottom: #000000 1px solid;padding: 0px;margin: 0px;width: 76px;vertical-align: bottom;}
+
+.tr0{height: 31px;}
+.tr1{height: 19px;}
+.tr2{height: 22px;}
+.tr3{height: 9px;}
+.tr4{height: 17px;}
+.tr5{height: 20px;}
+.tr6{height: 10px;}
+.tr7{height: 25px;}
+.tr8{height: 11px;}
+.tr9{height: 26px;}
+.tr10{height: 21px;}
+.tr11{height: 23px;}
+.tr12{height: 12px;}
+.tr13{height: 6px;}
+.tr14{height: 16px;}
+.tr15{height: 36px;}
+
+.t0{width: 956px;font: 13px 'Arial';}
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+
+
+<TABLE cellpadding=0 cellspacing=0 class="t0">
+<TR>
+	<TD colspan=2 class="tr0 td0"><P class="p0 ft0">Bệnh viện Bạch Mai</P></TD>
+	<TD colspan=4 class="tr0 td1"><P class="p1 ft1">DANH SÁCH CÁC KHÓA ĐÀO TẠO</P></TD>
+	<TD class="tr0 td2"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr0 td3"><P class="p2 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD colspan=2 class="tr1 td0"><P class="p3 ft0">Trung tâm đào tạo và</P></TD>
+	<TD class="tr1 td4"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD colspan=2 class="tr1 td5"><P class="p4 ft0">TẠI BỆNH VIỆN BẠCH MAI</P></TD>
+	<TD class="tr1 td6"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td2"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr1 td3"><P class="p2 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr2 td7"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr2 td8"><P class="p5 ft0">chỉ đạo tuyến</P></TD>
+	<TD colspan=4 rowspan=2 class="tr0 td1"><P class="p6 ft0">Từ ngày $NgayBatDau đến ngày $NgayKetThuc</P></TD>
+	<TD class="tr2 td2"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr2 td3"><P class="p2 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td7"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td8"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td2"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td3"><P class="p2 ft3">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr3 td9"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td10"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td11"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td12"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td13"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td14"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td15"><P class="p2 ft3">&nbsp;</P></TD>
+	<TD class="tr3 td16"><P class="p2 ft3">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr4 td17"><P class="p7 ft4">STT</P></TD>
+	<TD class="tr4 td18"><P class="p8 ft4">Tên khóa tập huấn</P></TD>
+	<TD class="tr4 td19"><P class="p9 ft4">Đơn vị đào tạo</P></TD>
+	<TD class="tr4 td20"><P class="p10 ft4">Thời gian</P></TD>
+	<TD class="tr4 td21"><P class="p11 ft4">Nguồn KP</P></TD>
+	<TD class="tr4 td22"><P class="p12 ft4">CB phụ trách</P></TD>
+	<TD class="tr4 td23"><P class="p2 ft4">Số HV</P></TD>
+	<TD class="tr4 td24"><P class="p11 ft4">Trạng thái</P></TD>
+</TR>
+<TR>
+	<TD class="tr5 td17"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr5 td18"><P class="p13 ft4">đào tạo</P></TD>
+	<TD class="tr5 td19"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr5 td20"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr5 td21"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr5 td22"><P class="p14 ft4">chính</P></TD>
+	<TD class="tr5 td23"><P class="p2 ft2">&nbsp;</P></TD>
+	<TD class="tr5 td24"><P class="p2 ft2">&nbsp;</P></TD>
+</TR>
+<TR>
+	<TD class="tr6 td25"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td26"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td27"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td28"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td29"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td30"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td31"><P class="p2 ft5">&nbsp;</P></TD>
+	<TD class="tr6 td32"><P class="p2 ft5">&nbsp;</P></TD>
+</TR>
+$DataTable
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

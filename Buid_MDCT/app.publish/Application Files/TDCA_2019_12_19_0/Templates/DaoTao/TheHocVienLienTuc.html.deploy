@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title></title>
+    <meta name="generator" content="BCL easyConverter SDK 3.0.60">
+    <style type="text/css">
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        article {
+            float: left;
+            width: 10cm;
+            height: 6.7cm;
+            position: relative;
+            border: solid 1px #ccc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+            article img.anhnen {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 10cm;
+                height: 6.7cm;
+            }
+
+            article table.khungthe {
+                position: absolute;
+                top: 73px;
+                left: 0;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+        table, tr, td, p {
+            padding: 0;
+            margin: 0;
+        }
+
+        article p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        article img.anhhocvien {
+            width: 2.5cm;
+            height: 3.5cm;
+            margin-top:-22px;
+        }
+
+        article p.tenhocvien {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            margin-left: 16px;
+			margin-top: 5px;
+            width: 95%;
+        }
+
+        article p.tenlop {
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0b93cd;
+            text-align: center;
+            font-size: 15px;
+			/*padding-top: 10px;
+			padding-bottom:10px;*/
+            width:95%;
+            margin-left: 13px;
+        }
+
+        article p.chuyennganh {
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0b93cd;
+            text-align: center;
+            font-size: 14px;
+			letter-spacing: -1px;
+            width:95%;
+            margin-left: 16px;
+        }
+
+        article p.khoahoc {
+            text-transform: uppercase !important;
+            font-weight: bold;
+            font-family: Tahoma;
+            color: #0b93cd;
+            text-align: center;
+            /*top: -224px;
+                left:50px;
+                position:relative;*/
+            font-size: 12px;
+            padding-top: -10px;
+        }
+
+        @font-face {
+            font-family: "barcode font";
+            src: url('3OF9_NEW.TTF') format('truetype');
+        }
+
+        article .barcode {
+            font-family: 'barcode font';
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    $DataTheHocVienLienTuc
+    <!--<article>
+        <img class="anhnen" src="http://4thebigdreams.com/photos/anhthehocvien_lientuc.jpg" />
+        <table class="khungthe">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><img class="anhhocvien" src='$anhthehocvien' /></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><p class="tenhocvien">cn. nguyễn đình thi</p></td>
+                        </tr>
+                        <tr><td><p class="tenlop">Khóa học: CHĂM SÓC BỆNH NHÂN HỒI SỨC CẤP CỨU</p></td></tr>
+                        <tr><td><p class="chuyennganh">Thời gian: 01/04/2011 - 01/06/2011</p></td></tr>
+                        <tr >
+                            <td><p class="barcode">0078.KC.11.B24</p></td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+        </table>
+    </article>-->
+</body>
+</html>

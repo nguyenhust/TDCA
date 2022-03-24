@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<TITLE></TITLE>
+<META name="generator" content="BCL easyConverter SDK 3.0.60">
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 31px 0px 118px 97px;padding: 0px;border: none;width: 719px;}
+#page_1 #id_1 {border:none;margin: 0px 0px 0px 0px;padding: 0px;border:none;width: 719px;overflow: hidden;}
+#page_1 #id_2 {border:none;margin: 19px 0px 0px 244px;padding: 0px;border:none;width: 475px;overflow: hidden;}
+
+
+
+
+
+.ft0{font: 19px 'Arial';line-height: 22px;}
+.ft1{font: 48px 'Arial';line-height: 55px;}
+.ft2{font: 35px 'Arial';line-height: 40px;}
+.ft3{font: 29px 'Arial';line-height: 33px;}
+.ft4{font: 27px 'Arial';line-height: 32px;}
+
+.p0{text-align: left;padding-left: 288px;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: left;padding-left: 226px;margin-top: 2px;margin-bottom: 0px;}
+.p2{text-align: left;padding-left: 58px;margin-top: 254px;margin-bottom: 0px;}
+.p3{text-align: left;margin-top: 27px;margin-bottom: 0px;}
+.p4{text-align: left;padding-left: 115px;margin-top: 401px;margin-bottom: 0px;}
+.p5{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+
+
+
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+
+
+<DIV id="id_1">
+<P class="p0 ft0">BỘ Y TẾ</P>
+<P class="p1 ft0">BỆNH VIỆN BẠCH MAI</P>
+<P class="p2 ft1">SỔ THEO DÕI HỌC TẬP</P>
+<P class="p3 ft2">LỚP BÁC SĨ CHUYÊN KHOA $Khoa - KHÓA $Tie</P>
+<P class="p4 ft3">Trung tâm Đào tạo - Chỉ đạo tuyến</P>
+</DIV>
+<DIV id="id_2">
+<P class="p5 ft4">Hà Nội, năm $Nam</P>
+</DIV>
+</DIV>
+</BODY>
+</HTML>

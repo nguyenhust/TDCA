@@ -1,0 +1,61 @@
+﻿
+<head>
+    <style type="text/css">
+        .auto-style1 {
+            width: 6px;
+        }
+        </style>
+</head>
+<table class="MainBody" style="vertical-align:bottom" >
+        <tr style="height:315px">
+            <td></td>
+        </tr>
+        <tr class="textHeight">
+            <td>
+                <table class="FullSize">
+                    <tr><td class="PandingLeft"></td><td class="FontArial auto-style24" >Học viên / Participant:</td><td class="FontCambiria2 auto-style8">$Name</td><td class="FontArial auto-style25">Ngày sinh / Date of birth:</td><td class="FontCambiria ">$DateOfBirth</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="textHeight">
+            <td><table class="FullSize">
+                <tr><td class="PandingLeft"></td><td class="FontArial auto-style26">Trình độ / Qualification:</td><td class="FontCambiria">$Qualification</td>
+                    </tr></table>
+
+            </td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontArial auto-style18">Đơn vị công tác / Organization:</td><td class="FontCambiria">$Organization</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontArial">Đã hoàn thành chương trình đào tạo về / Has completed the continuing medical course on:</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontCambiria3" style="text-align:center">$Content<br />
+                $DuAn</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontArial auto-style29">Số tiết học / Duration (Hours):</td><td class="FontCambiria auto-style22">$Duration</td><td class="FontArial auto-style23">$XepLoaiTitle</td><td class="FontCambiria">$xeploai</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td class="FontArial auto-style20">Từ ngày / From:</td><td class="FontCambiria auto-style8">$Start</td><td class="FontArial auto-style7">Đến ngày / To:</td><td class="FontCambiria">$End</td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="PandingLeft"></td><td ></td><td class="FontArial auto-style10">$Date</td><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><br><td class="PandingLeft"></td><td class="FontArial">$covantruongduan</td><td ></td><td class="FontArial auto-style13">GIÁM ĐỐC BỆNH VIỆN / DIRECTOR<br>$bannganh</br></br><td class="PandingLeft"></td></tr></table></td>
+        </tr>
+            <tr style="height:95px;">
+            <td></td>
+        </tr>
+            <tr class="textHeight">
+            <td><table class="FullSize"><tr><td class="auto-style27"></td><td class="FontArial2 auto-style21">Số / No:</td><td class="FontArial2 auto-style15">$Code</td><td class="auto-style1"></td><td class="FontArial auto-style13" style="text-align: center">GS.TS Phạm Minh Thông </td><td class="FontArial2 auto-style21" style="text-align: center">&nbsp;</td><td class="FontArial2 auto-style21" style="text-align: center">&nbsp;</td></tr></table></td>
+        </tr>
+            <tr>
+            <td></td>
+        </tr>
+    </table>
+       
+ 
+ 
